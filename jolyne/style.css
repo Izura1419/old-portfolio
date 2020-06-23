@@ -189,8 +189,11 @@ img{ /*Задаю позицию фото Джолин*/
 	img{
 		width: 80vw;
 		
-		top: 12%;
+		top: 10%;
 		left: 26%;
+	}
+	h1{
+		font-weight: bold;
 	}
 	svg{
 		left: 55%;
