@@ -156,10 +156,10 @@ path{ /*Задаю стили и появление квадрата*/
 
 	transition: all 5s ease;
 }
-#polyone{
+#polyone{ /*Делаю так, чтобы маленький квадрат был виден для больших устройств*/
 		display: inline-block;
 }
-#polytwo{
+#polytwo{ /*Делаю так, чтобы большой квадрат был незаметен для больших устройств*/
 		display: none;
 }
 
@@ -185,24 +185,121 @@ img{ /*Задаю позицию фото Джолин*/
 
 /*ОПТИМИЗАЦИЯ ПЕРВОЙ СТРАНИЦЫ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА*/
 
-@media (min-width: 600px) and (max-width: 1024px){
-	img{
+@media (min-width: 600px) and (max-width: 1024px){ /*Если ширина устройства от 600 до 1024px*/
+	img{ /*позиционирую Джолин*/
 		width: 80vw;
 		
-		top: 10%;
-		left: 26%;
+		top: 12%;
+		left: 24%;
 	}
-	h1{
+
+	h1{ /*Делаю текст более жирным и также позиционирую его*/
 		font-weight: bold;
+
+		position: absolute;
+		top: 105vh;
+		left: 70vw;
+		transform: translate(-50vw,-50vh);
 	}
-	svg{
-		left: 55%;
+	h1:nth-child(2){ /*Делаю фамилию ниже имени*/
+		top: 110vw;
+	}
+	@keyframes fly{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
+	from{
+		top:105vh;
+		left:70vw;
+	}
+	10%{
+		top: 102vh;
+		left: 68vw;
+	}
+	25%{
+		top: 100vh;
+		left: 65vw;
+	}
+	30%{
+		top: 98vh;
+		left: 70vw;
+	}
+	50%{
+		top: 96vh;
+		left: 95vw;
+	}
+	60%{
+		top: 100vh;
+		left: 98vw;
+	}
+	75%{
+		top: 105vh;
+		left: 100vw;
+	}
+	80%{
+		top: 103vh;
+		left: 96vw;
+	}
+	to{
+		top: 105vh;
+		left: 70vw;
+	}
+}
+@keyframes fly2{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
+	from{
+		top:110vh;
+		left:80vw;
+	}
+	10%{
+		top: 112vh;
+		left: 78vw;
+	}
+	25%{
+		top: 114vh;
+		left: 75vw;
+	}
+	30%{
+		top: 115vh;
+		left: 80vw;
+	}
+	50%{
+		top: 118vh;
+		left: 75vw;
+	}
+	60%{
+		top: 120vh;
+		left: 88vw;
+	}
+	75%{
+		top: 118vh;
+		left: 100vw;
+	}
+	80%{
+		top: 115vh;
+		left: 86vw;
+	}
+	to{
+		top: 110vh;
+		left: 80vw;
+	}
+}
+	
+	span{ /*Увеличиваю и позиционирую кнопку*/
+		font-size: 3.5em;
+
+		position: absolute;
+		top: 130vh;
+		left: 90vw;
+		transform: translate(-50vw,-50vh);
+	}
+
+	svg{ /*Позиционирую svg*/
+		top: 52%;
+		left: 53%;
+
 		width: 105vw;
 	}
-	#polyone{
+	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
 		display: none;
 	}
-	#polytwo{
+	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
 		display: inline-block;
 
 		stroke-width: 10;

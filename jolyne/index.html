@@ -15,16 +15,16 @@
 	<span onclick="reverse()">Открыть</span>
 	</div>
 	<!--тег svg графики-->
-	<svg id="svg"> <!--квадрат-->
+	<svg id="svg"> <!--квадратты (первый - для больших устройств, второй для мобильных)-->
 		<path id="polyone" d="M10 100 H 450 V 500 H 10 Z"/>
 		<path id="polytwo" d="M10 100 H 1000 V 1000 H 10 Z"/>
-		<!--прорисовка квадрата-->
+		<!--прорисовка квадратов-->
 		<animate href="#polyone" attributeName="stroke-dashoffset" from="0" to="1700"></animate>
 		<animate href="#polytwo" attributeName="stroke-dashoffset" from="0" to="6000"></animate>
 	</svg>
 	<!--фото Джолин, находящееся в квадрате-->
 	<img src="unnamed.jpg" alt="fRontend">
-
+	<!--подключения JavaScript-->
 	<script src="script.js"></script>
 </body>
 </html>
