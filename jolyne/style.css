@@ -194,7 +194,7 @@ img{ /*Задаю позицию фото Джолин*/
 	}
 
 	h1{ /*Делаю текст более жирным и также позиционирую его*/
-		font-weight: bold;
+		font-weight: 500;
 
 		position: absolute;
 		top: 105vh;
@@ -206,45 +206,45 @@ img{ /*Задаю позицию фото Джолин*/
 	}
 	@keyframes fly{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
 	from{
-		top:105vh;
+		top:110vh;
 		left:70vw;
 	}
 	10%{
-		top: 102vh;
+		top: 107vh;
 		left: 68vw;
 	}
 	25%{
-		top: 100vh;
+		top: 105vh;
 		left: 65vw;
 	}
 	30%{
-		top: 98vh;
+		top: 103vh;
 		left: 70vw;
 	}
 	50%{
-		top: 96vh;
+		top: 101vh;
 		left: 95vw;
 	}
 	60%{
-		top: 100vh;
+		top: 105vh;
 		left: 98vw;
 	}
 	75%{
-		top: 105vh;
+		top: 110vh;
 		left: 100vw;
 	}
 	80%{
-		top: 103vh;
+		top: 108vh;
 		left: 96vw;
 	}
 	to{
-		top: 105vh;
+		top: 110vh;
 		left: 70vw;
 	}
 }
 @keyframes fly2{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
 	from{
-		top:110vh;
+		top:115vh;
 		left:80vw;
 	}
 	10%{
@@ -276,7 +276,7 @@ img{ /*Задаю позицию фото Джолин*/
 		left: 86vw;
 	}
 	to{
-		top: 110vh;
+		top: 115vh;
 		left: 80vw;
 	}
 }
@@ -285,7 +285,7 @@ img{ /*Задаю позицию фото Джолин*/
 		font-size: 3.5em;
 
 		position: absolute;
-		top: 130vh;
+		top: 135vh;
 		left: 90vw;
 		transform: translate(-50vw,-50vh);
 	}
