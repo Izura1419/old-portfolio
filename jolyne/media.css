@@ -1,0 +1,287 @@
+/*ОПТИМИЗАЦИЯ ПЕРВОЙ СТРАНИЦЫ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/* Очень маленькие устройства (телефоны, 320px и ниже) */
+@media (max-width: 1024px) {
+	img{ /*позиционирую Джолин*/
+		width: 80.5vw;
+		
+		top: 7%;
+		left: 10.5%;
+	}
+
+	h1{ /*Делаю текст более жирным и также позиционирую его*/
+		font-weight: 500;
+		font-size: 2em;
+
+		position: absolute;
+		top: 55vh;
+		left: 20vw;
+		transform: translate(-50vw,-50vh);
+	}
+	h1:nth-child(2){ /*Делаю фамилию ниже имени*/
+		top: 110vw;
+	}
+	@keyframes fly{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
+	from{
+		top:110vh;
+		left:50vw;
+	}
+	10%{
+		top: 107vh;
+		left: 58vw;
+	}
+	25%{
+		top: 105vh;
+		left: 65vw;
+	}
+	30%{
+		top: 103vh;
+		left: 70vw;
+	}
+	50%{
+		top: 101vh;
+		left: 78vw;
+	}
+	60%{
+		top: 105vh;
+		left: 83vw;
+	}
+	75%{
+		top: 110vh;
+		left: 75vw;
+	}
+	80%{
+		top: 108vh;
+		left: 66vw;
+	}
+	to{
+		top: 110vh;
+		left: 50vw;
+	}
+}
+@keyframes fly2{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
+	from{
+		top:115vh;
+		left:60vw;
+	}
+	10%{
+		top: 112vh;
+		left: 68vw;
+	}
+	25%{
+		top: 114vh;
+		left: 65vw;
+	}
+	30%{
+		top: 115vh;
+		left: 74vw;
+	}
+	50%{
+		top: 118vh;
+		left: 78vw;
+	}
+	60%{
+		top: 120vh;
+		left: 85vw;
+	}
+	75%{
+		top: 118vh;
+		left: 90vw;
+	}
+	80%{
+		top: 115vh;
+		left: 86vw;
+	}
+	to{
+		top: 115vh;
+		left: 60vw;
+	}
+}
+	
+	span{ /*Увеличиваю и позиционирую кнопку*/
+		font-size: 1.5em;
+
+		position: absolute;
+		top: 130vh;
+		left: 85vw;
+		transform: translate(-50vw,-50vh);
+
+	}
+
+	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
+		display: none;
+	}
+	#polythree{
+		display: none;
+	}
+	#polyfour{
+		display: none;
+	}
+	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: inline-block;
+
+		stroke-width: 5;
+		stroke-dasharray:4000px;
+		stroke-dashoffset:4000px;
+
+		transition: all 8s ease;
+	}
+	svg{ /*Позиционирую svg*/
+		top: 45%;
+		left: 55.5%;
+
+		width: 90vw;
+	}
+}
+@media (max-width: 992px){
+	span{
+		color: red;
+	}
+}
+@media (max-width: 768px){
+	span{
+		color: green;
+	}
+
+}
+
+@media (height: 823px){
+	img{ /*позиционирую Джолин*/
+		top: 6%;
+	}
+}
+
+@media (max-width: 480px){
+	span{
+		color: blue;
+	}
+	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
+		display: none;
+	}
+	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: none;
+	}
+	#polyfour{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: none;
+	}
+	#polythree{
+		display: inline-block;
+
+		stroke-width: 5;
+		stroke-dasharray:4000px;
+		stroke-dashoffset:4000px;
+
+		transition: all 8s ease;
+	}
+	svg{ /*Позиционирую svg*/
+		top: 45%;
+		left: 54%;
+
+		width: 90vw;
+	}
+}
+@media (height: 667px){
+	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
+		display: none;
+	}
+	#polyfour{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: none;
+	}
+	#polythree{
+		display: none;
+	}
+	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: inline-block;
+
+		stroke-width: 5;
+		stroke-dasharray:4000px;
+		stroke-dashoffset:4000px;
+
+		transition: all 8s ease;
+	}
+	svg{ /*Позиционирую svg*/
+		top: 47%;
+		left: 57%;
+	}
+}
+@media (height: 812px){
+	img{ /*позиционирую Джолин*/
+		top: 3%;
+		left: 5%;
+
+		width: 90vw;
+	}
+	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
+		display: none;
+	}
+	#polythree{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: none;
+	}
+	#polyfour{
+		display: none;
+	}
+	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: inline-block;
+
+		stroke-width: 5;
+		stroke-dasharray:4000px;
+		stroke-dashoffset:4000px;
+
+		transition: all 8s ease;
+	}
+	svg{ /*Позиционирую svg*/
+		top: 47%;
+		left: 57%;
+	}
+}
+@media (max-width: 365px){
+	img{ /*позиционирую Джолин*/
+		left: 11%;
+	}
+	span{
+		color: orange;
+	}
+	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
+		display: none;
+	}
+	#polythree{
+		display: none;
+	}
+	#polyfour{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: none;
+	}
+	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: inline-block;
+
+		stroke-width: 5;
+		stroke-dasharray:4000px;
+		stroke-dashoffset:4000px;
+
+		transition: all 8s ease;
+	}
+	svg{ /*Позиционирую svg*/
+		top: 45%;
+		left: 56%;
+
+		width: 90vw;
+	}
+}
+@media (max-width: 320px){
+	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
+		display: none;
+	}
+	#polythree{
+		display: none;
+	}
+	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: none;
+	}
+	#polyfour{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+		display: inline-block;
+
+		stroke-width: 5;
+		stroke-dasharray:4000px;
+		stroke-dashoffset:4000px;
+
+		transition: all 8s ease;
+	}
+}

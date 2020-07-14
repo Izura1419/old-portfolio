@@ -15,7 +15,7 @@ function reverse(){
 	surname.style.transform = "translate(-50vw,-50vh) rotateX(180deg)";
 /*Ввожу функцию, которая проверяет ширину экрана устройства*/
 	function check() {
-  if (window.matchMedia("(min-width: 600px) and (max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
+  if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
     posit = "80vw"; /*Позиция кнопки будет 80vw*/
     open.style.width = "50vw"; /*Её ширина 50wv*/
   } 
