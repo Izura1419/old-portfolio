@@ -144,6 +144,24 @@
 
 }
 
+@media (min-height: 800px) and (max-height: 950px){
+	img{ /*позиционирую Джолин*/
+		top: 4.5%;
+	}
+	svg{ /*Позиционирую svg*/
+		width: 155vw;
+	}
+	#polytwo{
+		display: inline-block;
+
+		stroke-width: 5;
+		stroke-dasharray:5000px;
+		stroke-dashoffset:5000px;
+
+		transition: all 8s ease;
+	}
+}
+
 @media (height: 823px){
 	img{ /*позиционирую Джолин*/
 		top: 6%;
