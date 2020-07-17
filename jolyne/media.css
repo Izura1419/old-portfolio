@@ -259,9 +259,10 @@
 @media (min-width: 365px) and (max-width: 1024px){
 	img{ /*позиционирую Джолин*/
 		top: 3%;
-		left: 6.5%;
+		left: 1.5%;
 
-		width: 90vw;
+		width: 100vw;
+		height: 45vh;
 	}
 	#polyone{ /*Делаю так, чтобы маленький квадрат был незаметен для мобильных устройств*/
 		display: none;
