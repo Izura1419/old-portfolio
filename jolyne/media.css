@@ -258,7 +258,7 @@
 
 @media (min-width: 365px) and (max-width: 1024px){
 	img{ /*позиционирую Джолин*/
-		top: 4.5%;
+		top: 3%;
 		left: 6.5%;
 
 		width: 90vw;
@@ -283,7 +283,7 @@
 	}
 	svg{ /*Позиционирую svg*/
 		top: 47%;
-		left: 58%;
+		left: 60%;
 	}
 }
 
