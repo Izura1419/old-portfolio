@@ -2,7 +2,7 @@
 /* Очень маленькие устройства (телефоны, 320px и ниже) */
 @media (max-width: 1150px) {
 	img{ /*позиционирую Джолин*/
-		width: 80.5vw;
+		width: 100%;
 		
 		top: 7%;
 	}
@@ -449,11 +449,14 @@
 
 @media (max-width: 500px){
 	svg{
-		left: 65%;
+		left: 70%;
 	}
-	img{
-		width: 80vw;
-		left: 11%;
+	.image{
+		width: 105vw;
+		height: 50vh;
+
+		top: 5%;
+		left: 9%;
 	}
 	span{
 		top: 135vh;
@@ -473,13 +476,21 @@
 		left: 65%;
 	}
 	img{
-		left: 9%;
+		width: 150%;
+	}
+	.image{
+		width: 55vw;
+		height: 55vh;
+
+		top: 5%;
+		left: 8%;
 	}
 	.fnln{
 		font-size: 1.5em;
 	}
 	span{
 		font-size: 1em;
+		top: 135vh;
 	}
 }
 
