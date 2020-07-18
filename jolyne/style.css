@@ -178,12 +178,12 @@ path{ /*Задаю стили и появление квадрата*/
 }
 
 img{ /*Задаю позицию фото Джолин*/
-	position: absolute;
-	top: 14vh;
-	left: 54vw;
+	object-fit: cover;
+	position: relative;
+	
 
-	width: 30%;
-	height: 65%;
+	width: 100%;
+	height: 100%;
 
 	z-index: -1;
 
@@ -191,8 +191,12 @@ img{ /*Задаю позицию фото Джолин*/
 }
 
 .image{
-	width: 100vw;
-	height: 100vh;
+	position: absolute;
+	width: 30vw;
+	height: 65vh;
+
+	top: 15vh;
+	left: 54vw;
 }
 @keyframes open{ /*Анимация появления фото Джолин*/
 	from{

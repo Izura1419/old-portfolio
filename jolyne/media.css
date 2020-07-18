@@ -449,11 +449,14 @@
 
 @media (max-width: 500px){
 	svg{
-		left: 70%;
+		left: 65%;
 	}
 	img{
 		width: 80vw;
-		left: 9%;
+		left: 11%;
+	}
+	span{
+		top: 135vh;
 	}
 }
 @media (min-width: 450px) and (max-width: 1100px){
