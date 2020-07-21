@@ -247,7 +247,7 @@
 @media (max-width: 365px){
 	svg{ /*Позиционирую svg*/
 		top: 45%;
-		left: 60%;
+		left: 58%;
 
 		width: 97vw;
 	}
@@ -258,14 +258,14 @@
 		width: 50vw;
 		height: 0vh;
 
-		top: 0%;
+		top: 5%;
 		left: 0%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
 		font-size: 1.2em;
 	}
 	span{/*задаю размер текста кнопке*/
-		font-size: 1em;
+		font-size: 1.4em;
 	}
 	#polyone{ /*Делаю так, чтобы нужные квадраты НЕ показывались НЕнужному устройству*/
 		display: none;
