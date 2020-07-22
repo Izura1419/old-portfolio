@@ -1,10 +1,21 @@
+@font-face{
+
+	font-family: "Consolas";
+
+	src: url("fonts/consola.ttf") format("ttf"),
+	url("fonts/consola.ttf") format("ttf");
+
+	font-weight: normal;
+    font-style: normal;
+}
+
 html{ /*Подготавливаю страницу к работе*/
 	margin: 0;	
 	padding: 0;
 
-	font-family: consolas;
-
 	background-color: white;
+
+	font-family: "Consolas", consolas;
 
 	overflow: hidden;
 
@@ -127,7 +138,7 @@ span::before{ /*Создаю новый элемент (палочку) над �
 	content: "";
 
 	position: relative;
-	top: 0vh;
+	top: 1vh;
 	left: 0vw;
 
 	display: inline-block;
@@ -140,7 +151,7 @@ span::before{ /*Создаю новый элемент (палочку) над �
 	transition: all 1s ease;
 }
 span:hover::before{/*Перемещаю палочку при наведении*/
-	top: 4.5vw;
+	top: 3.5vw;
 }
 .fnln{ /*Задаю размер контейнеру текста*/
 	width: 70vw;
@@ -210,11 +221,11 @@ img{ /*Задаю позицию, ширину, анимацию и покрыв
 
 .image{ /*Задаю позицию и ширину родительскому элементу фото Джолин*/
 	position: absolute;
-	width: 30vw;
-	height: 65vh;
+	width: 40vw;
+	height: 75vh;
 
-	top: 15vh;
-	left: 54vw;
+	top: 8vh;
+	left: 48vw;
 }
 @keyframes open{ /*Анимация появления фото Джолин*/
 	from{
