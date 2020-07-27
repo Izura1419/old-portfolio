@@ -255,10 +255,10 @@
 		width: 200%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 50vw;
+		width: 65vw;
 		height: 0vh;
 
-		top: 3.5%;
+		top: 0%;
 		left: -4%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
@@ -286,17 +286,18 @@
 		transition: all 8s ease;
 	}
 	.pageOne{
-		width: 100vw;
-		height: 230vh;
+		width: 105vw;
+		height: 250vh;
 
 		margin-left: -2vw;
+		top: 110vh;
 	}
 	.story{
-		font-size: 2em;
+		font-size: 2.5em;
 
-		width: 90vw;
+		width: 80vw;
 
-		margin: 10vh 0 0 45vw;
+		margin: 3vh 0 0 45vw;
 	}
 	.ficha::before{
 		content: "";
@@ -349,13 +350,13 @@
 	}
 	.whoIm:nth-child(2){
 		position: relative;
-		top: 60vh;
+		top: 65vh;
 	}
 	.pc{
 		width: 120vw;
-		height: 45vh;
+		height: 60vh;
 
-		top: 180vh; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
+		top: 200vh; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
 		left: -25vw;
 	}
 }
