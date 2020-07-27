@@ -9,12 +9,14 @@
 	<link rel="shortcut icon" href="sasukes-sharingan.png" type="image/png">
 </head>
 <body>
+	<div class="page"><!--Контейнер для первой страницы-->
+
 	<!--Мои фамилия и имя, которые летает по сайту-->
 	<div class="fnln">
 	<h1 id="one">Владислав</h1>
 	<h1 id="two">Приходько</h1>
 	<!--Текст, при нажатии которого появляется мой возраст и город-->
-	<span onclick="reverse()">Открыть</span>
+	<span onclick="reverse()" class="span">Открыть</span>
 	</div>
 	<!--тег svg графики-->
 	<svg id="svg"> <!--квадратты (первый - для больших устройств, второй и остальные для мобильных)-->
@@ -31,7 +33,25 @@
 	</svg>
 	<!--фото Джолин, находящееся в квадрате-->
 	<div class="image">
-		<img src="unnamed.jpg" alt="fRontend">
+		<img class="img" src="unnamed.jpg" alt="fRontend">
+	</div>
+	</div>
+
+
+	<div class="page pageOne">
+		<img class="stars" src="stars.png" alt="stars">
+		<h1 class="story">Как я вообще попал в <span class="ficha">IT?</span></h1>
+		<h2 class="grow">
+			<span class="whoIm"><span class="eE">C</span> взрослением человек задаёт вопрос - "А кто я? Кем я хочу быть?".</span>
+			<span class="whoIm">
+			Однажды и я спроси<span class="eE">л</span> это у самого себя, на что последовал встречный вопрос -
+			"Куда мне идти, если я целыми днями сижу за компьют<span class="eE">е</span>ром?".<br> Тут я провёл логическую цепочку.
+			"Ага...компьютер, что делают на компьютере? Точно! Игры!". Мой 12-ти летний разум посчитал эту
+			идею гениальной и я пошёл в интернет для <span class="eE">д</span>альнейнего изучения информации. <br>
+			Там я узнал что игры делают на каких-то языках программ<span class="eE">и</span>рования(???)</span>
+		</h2>
+		<img class="rost" src="rost.png" alt="grow">
+		<img class="pc" src="hm.png" alt="pc">
 	</div>
 	<!--подключения JavaScript-->
 	<script src="script.js"></script>
