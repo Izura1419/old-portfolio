@@ -255,7 +255,7 @@
 		width: 200%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 65vw;
+		width: 75vw;
 		height: 0vh;
 
 		top: 0%;
@@ -289,7 +289,7 @@
 		width: 105vw;
 		height: 250vh;
 
-		margin-left: -2vw;
+		margin-left: -3vw;
 		top: 110vh;
 	}
 	.story{
@@ -297,7 +297,7 @@
 
 		width: 80vw;
 
-		margin: 3vh 0 0 45vw;
+		margin: -3vh 0 0 45vw;
 	}
 	.ficha::before{
 		content: "";
@@ -321,14 +321,14 @@
 	}
 	.stars{
 		width: 90%;
-		height: 230vh;
+		height: 250vh;
 	}
 	@keyframes flyStars{
 		from{
 			left: -10%;
 		}
 		50%{
-			left: -10.1%;
+			left: -11%;
 		}
 		to{
 			left: -10%;
@@ -338,26 +338,26 @@
 		width: 80vw;
 
 		position: relative;
-		top: -215vh;
+		top: -205vh;
 		left: 8vw;
 	}
 	.rost{
 		width: 90vw;
 		height: 45vh;
 
-		top: 40vh;
+		top: 70vh;
 		left: 2vw;
 	}
 	.whoIm:nth-child(2){
 		position: relative;
-		top: 65vh;
+		top: 75vh;
 	}
 	.pc{
-		width: 120vw;
-		height: 60vh;
+		width: 80vw;
+		height: 40vh;
 
-		top: 200vh; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
-		left: -25vw;
+		top: 210vh; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
+		left: 10vw;
 	}
 }
 

@@ -323,9 +323,6 @@ path{ /*Задаю стили и появление квадрата*/
 .rost, .pc{
 	position: absolute;
 
-	width: 25vw;
-	height: 50vh;
-
 	transition: all 30s ease;
 }
 .rost:hover{
@@ -335,10 +332,16 @@ path{ /*Задаю стили и появление квадрата*/
 	transform: rotateY(180deg) rotateX(180deg) scale(0);
 }
 .rost{
+	width: 25vw;
+	height: 50vh;
+
 	top: 20vh;
 	left: 68vw;
 }
 .pc{
+	width: 20vw;
+	height: 40vh;
+
 	top: 50vh;
-	left: 40vw;
+	left: 45vw;
 }
