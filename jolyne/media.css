@@ -335,7 +335,7 @@
 		width: 80vw;
 
 		position: relative;
-		top: -235vh;
+		top: -225vh;
 		left: 15vw;
 	}
 	.rost{
@@ -347,7 +347,7 @@
 	}
 	.whoIm:nth-child(2){
 		position: relative;
-		top: 75vh;
+		top: 70vh;
 	}
 	.pc{
 		width: 80vw;
