@@ -227,7 +227,7 @@
 @media (max-width: 400px){
 	svg{/*позиционирую svg*/
 		top: 45%;
-		left: 60%;
+		left: 56%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
 		width: 60vw;
@@ -247,19 +247,19 @@
 @media (max-width: 365px){
 	.svg{ /*Позиционирую svg*/
 		top: 45%;
-		left: 65%;
+		left: 56%;
 
 		width: 97%;
 	}
 	.img{
-		width: 180%;
+		width: 120%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
 		width: 80vw;
 		height: 0vh;
 
 		top: 0%;
-		left: -20%;
+		left: -5%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
 		font-size: 1.2em;
@@ -338,14 +338,14 @@
 		width: 80vw;
 
 		position: relative;
-		top: -225vh;
+		top: -230vh;
 		left: 15vw;
 	}
 	.rost{
 		width: 90vw;
 		height: 45vh;
 
-		top: 60vh;
+		top: 50vh;
 		left: 10vw;
 	}
 	.whoIm:nth-child(2){
