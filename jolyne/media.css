@@ -227,7 +227,7 @@
 @media (max-width: 400px){
 	svg{/*позиционирую svg*/
 		top: 45%;
-		left: 56%;
+		left: 65%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
 		width: 60vw;
@@ -247,7 +247,7 @@
 @media (max-width: 365px){
 	.svg{ /*Позиционирую svg*/
 		top: 45%;
-		left: 56%;
+		left: 65%;
 
 		width: 97%;
 	}
@@ -255,11 +255,11 @@
 		width: 120%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 80vw;
-		height: 0vh;
+		width: 100vw;
+		height: 50vh;
 
-		top: 0%;
-		left: -5%;
+		top: -3%;
+		left: -10%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
 		font-size: 1.2em;
