@@ -104,7 +104,7 @@
 
 		position: absolute;
 		top: 130vh;
-		left: 85vw;
+		left: 90vw;
 		transform: translate(-50vw,-50vh);
 	}
 	.span::before{ /*Убираю анимацию при наведении*/
@@ -252,14 +252,14 @@
 		width: 97%;
 	}
 	.img{
-		width: 120%;
+		width: 100%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
 		width: 100vw;
 		height: 50vh;
 
 		top: -3%;
-		left: -10%;
+		left: 0%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
 		font-size: 1.2em;
@@ -305,7 +305,7 @@
 		display: inline-block;
 
 		width: 15vw;
-		height: 6.5vh;
+		height: 7.5vh;
 
 		transform: scale(0);
 
@@ -338,19 +338,19 @@
 		width: 80vw;
 
 		position: relative;
-		top: -230vh;
+		top: -225vh;
 		left: 15vw;
 	}
 	.rost{
 		width: 90vw;
 		height: 45vh;
 
-		top: 50vh;
+		top: 45vh;
 		left: 10vw;
 	}
 	.whoIm:nth-child(2){
 		position: relative;
-		top: 70vh;
+		top: 60vh;
 	}
 	.pc{
 		width: 80vw;
