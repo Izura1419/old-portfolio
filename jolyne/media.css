@@ -247,7 +247,7 @@
 @media (max-width: 365px){
 	.svg{ /*Позиционирую svg*/
 		top: 45%;
-		left: 65%;
+		left: 64%;
 
 		width: 97%;
 	}
@@ -259,7 +259,7 @@
 		height: 50vh;
 
 		top: -3%;
-		left: 0%;
+		left: -1%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
 		font-size: 1.2em;
@@ -345,7 +345,7 @@
 		width: 90vw;
 		height: 45vh;
 
-		top: 45vh;
+		top: 48vh;
 		left: 10vw;
 	}
 	.whoIm:nth-child(2){
