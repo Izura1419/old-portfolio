@@ -258,8 +258,8 @@
 		width: 100vw;
 		height: 50vh;
 
-		top: -3%;
-		left: -1%;
+		top: -2%;
+		left: 0%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
 		font-size: 1.2em;
@@ -298,6 +298,7 @@
 		width: 80vw;
 
 		margin: -3vh 0 0 53vw;
+		position: absolute;
 	}
 	.ficha::before{
 		content: "";
@@ -305,12 +306,12 @@
 		display: inline-block;
 
 		width: 15vw;
-		height: 7.5vh;
+		height: 7.8vh;
 
 		transform: scale(0);
 
 		position: absolute;
-		top: 5.5vh;
+		top: 6vh;
 		left: 47.5vw;
 
 		border-radius: 50%;
@@ -338,7 +339,7 @@
 		width: 80vw;
 
 		position: relative;
-		top: -225vh;
+		top: -228vh;
 		left: 15vw;
 	}
 	.rost{
