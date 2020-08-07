@@ -258,8 +258,8 @@
 		width: 100vw;
 		height: 50vh;
 
-		top: -1.5%;
-		left: 0.5%;
+		top: -1%;
+		left: 1.5%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
 		font-size: 1.2em;
