@@ -244,7 +244,7 @@
 	}
 }
 
-@media (max-width: 365px){
+@media (max-width: 411px){
 	.svg{ /*Позиционирую svg*/
 		top: 45%;
 		left: 64%;
