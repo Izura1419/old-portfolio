@@ -147,12 +147,12 @@
 		left: 9%;
 	}
 	.pageOne{/*Растягивание второй страницы, цвет*/
-		width: 120%;
-		height: 250%;
+		width: 121%;
+		height: 260%;
 
 		margin: 0 0% 0 -3%;
 
-		top: 110%;
+		top: 120%;
 	}
 	.story{/*цвет, размер и позиция заголовка*/
 		font-size: 2.5em;
@@ -202,14 +202,14 @@
 		width: 80%;
 
 		position: absolute;
-		top: 8%;
+		top: 10%;
 		left: 13%;
 	}
 	.rost{/*иллюстрация*/
 		width: 80%;
-		height: 17%;
+		height: 21%;
 
-		top: 16%;
+		top: 18%;
 		left: 5%;
 	}
 	.whoIm:nth-child(2){/*вторая часть контейнера должна быть ниже первой*/
@@ -219,20 +219,20 @@
 	}
 	.pc{/*иллюстрация*/
 		width: 80%;
-		height: 18%;
+		height: 20%;
 
-		top: 70%; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
+		top: 75%; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
 		left: 10%;
  	}
 
 
  	.pageTwo{
- 		width: 120%;
-		height: 120%;
+ 		width: 121%;
+		height: 130%;
 
 		margin-left: -3%;
 
-		top: 363%;
+		top: 383%;
  	}
  	.mFDL{
 		width: 70%;
@@ -345,6 +345,9 @@
 }
 
 @media (max-width: 365px){
+	.pageZero{
+		height: 120%;
+	}
 	.svg{ /*Позиционирую svg*/
 		top: 55%;
 		left: 54%;
@@ -358,14 +361,14 @@
 		width: 120%;
 		height: 120%;
 
-		top: -11%;
+		top: -8%;
 		left: -11%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
-		font-size: 1.4em;
+		font-size: 1.2em;
 	}
 	.span{/*задаю размер текста кнопке*/
-		font-size: 1.4em;
+		font-size: 1em;
 	}
 	#polyone{ /*Делаю так, чтобы нужные квадраты НЕ показывались НЕнужному устройству*/
 		display: none;
@@ -374,9 +377,6 @@
 		display: none;
 	}
 	#polyfour{ 
-		display: none;
-	}
-	#polytwo{ /*Делаю так, чтобы нужный квадрат показывался нужному устройству и немного стилизую его*/
 		display: inline-block;
 
 		stroke-width: 5;
@@ -385,7 +385,10 @@
 
 		transition: all 8s ease;
 	}
-
+	#polytwo{ /*Делаю так, чтобы нужный квадрат показывался нужному устройству и немного стилизую его*/
+		display: none;
+	}
+}
 
 @media (max-width: 320px){
 	svg{/*позиционирую svg*/
