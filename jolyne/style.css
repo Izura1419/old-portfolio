@@ -19,8 +19,8 @@ html{ /*Подготавливаю страницу к работе*/
 
 	overflow-x: hidden;
 
-	width: 100vw;
-	height: 200vh;
+	width: 100%;
+	height: 200%;
 }
 
 .page{ /*делаю контейнеры размером со всё устройство*/
@@ -33,98 +33,98 @@ h1{ /*Задаю стили моему имени и фамилии, чтобы 
 	font-weight: lighter;
 
 	position: absolute;
-	top: 65vh;
-	left: 60vw;
-	transform: translate(-50vw,-50vh);
+	top: 65%;
+	left: 60%;
+	transform: translate(-50%,-50%);
 
 	transition: all 1s ease;
 }
-h1:nth-child(2){ /*Делаю так, чтобы фамилия была ниже имени*/
-	top: 85vh;
+#two(2){ /*Делаю так, чтобы фамилия была ниже имени*/
+	top: 85%;
 }
 @keyframes fly{ /*Анимация плавного полёта имени*/
 	from{
-		top:55vh;
-		left:60vw;
+		top:15%;
+		left:30%;
 	}
 	10%{
-		top: 52vh;
-		left: 58vw;
+		top: 12%;
+		left: 33%;
 	}
 	25%{
-		top: 50vh;
-		left: 55vw;
+		top: 20%;
+		left: 35%;
 	}
 	30%{
-		top: 46vh;
-		left: 60vw;
+		top: 16%;
+		left: 40%;
 	}
 	50%{
-		top: 40vh;
-		left: 65vw;
+		top: 10%;
+		left: 45%;
 	}
 	60%{
-		top: 50vh;
-		left: 68vw;
+		top: 20%;
+		left: 48%;
 	}
 	75%{
-		top: 60vh;
-		left: 70vw;
+		top: 30%;
+		left: 50%;
 	}
 	80%{
-		top: 58vh;
-		left: 66vw;
+		top: 28%;
+		left: 46%;
 	}
 	to{
-		top: 55vh;
-		left: 60vw;
+		top: 15%;
+		left: 30%;
 	}
 }
 @keyframes fly2{ /*Анимация плавного полёта фамилии*/
 	from{
-		top:75vh;
-		left:60vw;
+		top:45%;
+		left:40%;
 	}
 	10%{
-		top: 80vh;
-		left: 58vw;
+		top: 50%;
+		left: 48%;
 	}
 	25%{
-		top: 83vh;
-		left: 55vw;
+		top: 53%;
+		left: 35%;
 	}
 	30%{
-		top: 85vh;
-		left: 60vw;
+		top: 55%;
+		left: 40%;
 	}
 	50%{
-		top: 88vh;
-		left: 65vw;
+		top: 58%;
+		left: 45%;
 	}
 	60%{
-		top: 93vh;
-		left: 68vw;
+		top: 63%;
+		left: 48%;
 	}
 	75%{
-		top: 95vh;
-		left: 70vw;
+		top: 65%;
+		left: 50%;
 	}
 	80%{
-		top: 97vh;
-		left: 66vw;
+		top: 67%;
+		left: 46%;
 	}
 	to{
-		top: 75vh;
-		left: 60vw;
+		top: 45%;
+		left: 40%;
 	}
 }
 
 .span{ /*Задаю позицию, размер и появление своеобразной кнопке */
 	position: absolute;
-	top: 68vh;
-	left: 25vw;
+	top: 105%;
+	left: 35%;
 
-	width: 10vw;
+	width: 15%;
 
 	font-size: 2em;
 
@@ -137,48 +137,48 @@ h1:nth-child(2){ /*Делаю так, чтобы фамилия была ниж�
 .span::before{ /*Создаю новый элемент (палочку) над кнопкой*/
 	content: "";
 
-	position: relative;
-	top: 1vh;
-	left: 0vw;
+	position: absolute;
+	top: 1%;
+	left: 0%;
 
 	display: inline-block;
 
-	width: 9vw;
-	height: .5vh;
+	width: 85%;
+	height: 5%;
 
 	background-color: black;
 
 	transition: all 1s ease;
 }
 .span:hover::before{/*Перемещаю палочку при наведении*/
-	top: 3.5vw;
+	top: 100%;
 }
 .fnln{ /*Задаю размер контейнеру текста*/
-	width: 70vw;
-	height: 70vh;
+	width: 70%;
+	height: 70%;
 	position: absolute;
 	animation: openone 1s ease;
 }
 @keyframes openone{ /*анимация появления контейнера с текстом*/
 	from{
-		left: -60vw;
+		left: -60%;
 	}
 	70%{
-		left: 10vw;
+		left: 10%;
 	}
 	to{
-		left: 1vw;
+		left: 1%;
 	}
 }
 
 svg{ /*Задаю размеры контейнеру с svg*/
 	position: absolute;
 	top: 50%;
-	left: 103%;
-	transform: translate(-50vw, -50vh);
+	left: 73%;
+	transform: translate(-50%, -50%);
 
-	width: 40vw;
-	height: 100vh;
+	width: 40%;
+	height: 100%;
 }
 path{ /*Задаю стили и появление квадрата*/
 	position: relative;
@@ -209,7 +209,6 @@ path{ /*Задаю стили и появление квадрата*/
 .img{ /*Задаю позицию, ширину, анимацию и покрывание родительского элемента фото Джолин*/
 	object-fit: contain;
 	position: relative;
-	
 
 	width: 100%;
 	height: 100%;
@@ -221,11 +220,11 @@ path{ /*Задаю стили и появление квадрата*/
 
 .image{ /*Задаю позицию и ширину родительскому элементу фото Джолин*/
 	position: absolute;
-	width: 40vw;
-	height: 75vh;
+	width: 40%;
+	height: 75%;
 
-	top: 8vh;
-	left: 48vw;
+	top: 8%;
+	left: 50%;
 }
 @keyframes open{ /*Анимация появления фото Джолин*/
 	from{
@@ -237,43 +236,45 @@ path{ /*Задаю стили и появление квадрата*/
 }
 
 
-.pageOne{
-	width: 95vw;
-	height: 100vh;
+.pageOne{ /*Растягивание второй страницы, цвет*/
+	width: 95%;
+	height: 100%;
 
-	margin-left: 1vw;
+	margin-left: 1%;
 	padding: 0;
 
 	position: absolute;
-	top: 100vh;
+	top: 100%;
 
 	background-color: black;
 }
-.story{
+.story{ /*цвет, размер и позиция заголовка*/
 	color: white;
 
 	font-size: 3em;
 
-	width: 50vw;
+	width: 50%;
 
-	margin: -30vh 0 0 14vw;
+	position: absolute;
+	top: 5%;
+	left: 50%;
 }
-.ficha{
-	margin-left: 1vw;
+.ficha{/*отступ фичи*/
+	margin-left: 1%;
 }
-.ficha::before{
+.ficha::before{/*красный круг, появляющийся при  наведении на IT*/
 	content: "";
 
 	display: inline-block;
 
-	width: 5vw;
-	height: 10.5vh;
+	width: 9.5%;
+	height: 105%;
 
 	transform: scale(0);
 
 	position: absolute;
-	top: -0.5vh;
-	left: 40.8vw;
+	top: 3%;
+	left: 87%;
 
 	border-radius: 50%;
 
@@ -281,10 +282,10 @@ path{ /*Задаю стили и появление квадрата*/
 
 	transition: all 1s ease;
 }
-.ficha:hover::before{
+.ficha:hover::before{/*при наведении круг увеличивается в размерах*/
 	transform: scale(1);
 }
-.stars{
+.stars{ /*размер звёзд и позиция*/
 	position: relative;
 
 	width: 175%;
@@ -292,7 +293,7 @@ path{ /*Задаю стили и появление квадрата*/
 
 	animation: flyStars 30s linear 0s infinite normal none running;
 }
-@keyframes flyStars{
+@keyframes flyStars{/*анимация движения звёзд*/
 	from{
 		top: -10%;
 		left: -80%;
@@ -305,43 +306,98 @@ path{ /*Задаю стили и появление квадрата*/
 		left: -80%;
 	}
 }
-.grow{
-	width: 40vw;
+.grow{/*ширина контента  и его расположение*/
+	width: 40%;
 
 	color: white;
 
 	position: relative;
-	top: -80vh;
-	left: 5vw;
+	top: -80%;
+	left: 5%;
 }
-.eE{
+.eE{ /*пасхалка*/
 	transition:all 10s ease;
 }
-.grow:hover .eE{
+.grow:hover .eE{ /*появление пасхалки*/
 	color: red;
 }
-.rost, .pc{
+.rost, .pc{ /*позиции иллюстраций*/
 	position: absolute;
 
 	transition: all 30s ease;
 }
-.rost:hover{
+.rost:hover{ /*кружение иллюстраций при наведении*/
 	transform: rotateY(-180deg) rotateX(-180deg) scale(0);
 }
-.pc:hover{
+.pc:hover{/*кружение иллюстраций при наведении*/
 	transform: rotateY(180deg) rotateX(180deg) scale(0);
 }
-.rost{
-	width: 25vw;
-	height: 50vh;
+/*иллюстрации*/
+.rost{ 
+	width: 25%;
+	height: 50%;
 
-	top: 20vh;
-	left: 68vw;
+	top: 20%;
+	left: 68%;
 }
 .pc{
-	width: 20vw;
-	height: 40vh;
+	width: 20%;
+	height: 40%;
 
-	top: 50vh;
-	left: 45vw;
+	top: 50%;
+	left: 45%;
+}
+
+.pageTwo{ /*Растягивание третьей страницы, цвет*/
+	width: 100%;
+	height: 100%;
+
+	margin-left: -1%;
+	padding: 0;
+
+	position: absolute;
+	top: 202%;
+
+	background-color: rgba(255,0,0,0.5);
+}
+.mFDL{
+	color: black;
+
+	font-size: 6em;
+
+	width: 50%;
+
+	position: absolute;
+	top: 0%;
+	left: 40%;
+
+	padding-left: 50%;
+}
+.plus{
+	display: inline-block;
+
+	animation: plusAnim 3s linear 0s infinite;
+}
+.plus:nth-child(2){
+	transform: translate(-30%, -5%);
+	animation: plusAnim 3s linear 1s infinite;
+}
+
+@keyframes plusAnim{
+	from{
+		transform: scale(1) translate(-30%, -5%);
+	}
+	50%{
+		transform: scale(2) translate(-20%, -5%);	
+	}
+	to{
+		transform: scale(1) translate(-30%, -5%);
+	}
+}
+.sclboy{
+	position: absolute;
+	top: 20%;
+	left: 10%;
+
+	width: 40%;
 }

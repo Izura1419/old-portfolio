@@ -3,8 +3,8 @@
 /*общие настройки (чтобы не повторяться)*/
 @media (max-width: 1150px) {
 	.img{
-		width: 35vw;
-		height: 45vh;
+		width: 35%;
+		height: 45%;
 
 		top: 9%;
 		left: 52%;
@@ -15,87 +15,87 @@
 		font-size: 2em;
 
 		position: absolute;
-		top: 55vh;
-		left: 20vw;
-		transform: translate(-50vw,-50vh);
+		top: 55%;
+		left: 20%;
+		transform: translate(-50%,-50%);
 	}
-	h1:nth-child(2){ /*Делаю фамилию ниже имени*/
-		top: 110vw;
+	#two{ /*Делаю фамилию ниже имени*/
+		top: 110%;
 	}
 	@keyframes fly{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
 	from{
-		top:110vh;
-		left:50vw;
+		top:90%;
+		left:50%;
 	}
 	10%{
-		top: 107vh;
-		left: 58vw;
+		top: 87%;
+		left: 58%;
 	}
 	25%{
-		top: 105vh;
-		left: 65vw;
+		top: 85%;
+		left: 65%;
 	}
 	30%{
-		top: 103vh;
-		left: 70vw;
+		top: 83%;
+		left: 70%;
 	}
 	50%{
-		top: 101vh;
-		left: 78vw;
+		top: 81%;
+		left: 78%;
 	}
 	60%{
-		top: 105vh;
-		left: 83vw;
+		top: 85%;
+		left: 83%;
 	}
 	75%{
-		top: 110vh;
-		left: 75vw;
+		top: 90%;
+		left: 75%;
 	}
 	80%{
-		top: 108vh;
-		left: 66vw;
+		top: 88%;
+		left: 66%;
 	}
 	to{
-		top: 110vh;
-		left: 50vw;
+		top: 90%;
+		left: 50%;
 	}
 }
 @keyframes fly2{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
 	from{
-		top:115vh;
-		left:60vw;
+		top:100%;
+		left:60%;
 	}
 	10%{
-		top: 112vh;
-		left: 68vw;
+		top: 97%;
+		left: 68%;
 	}
 	25%{
-		top: 114vh;
-		left: 65vw;
+		top: 99%;
+		left: 65%;
 	}
 	30%{
-		top: 115vh;
-		left: 74vw;
+		top: 100%;
+		left: 74%;
 	}
 	50%{
-		top: 118vh;
-		left: 78vw;
+		top: 103%;
+		left: 78%;
 	}
 	60%{
-		top: 120vh;
-		left: 85vw;
+		top: 105%;
+		left: 85%;
 	}
 	75%{
-		top: 118vh;
-		left: 90vw;
+		top: 103%;
+		left: 90%;
 	}
 	80%{
-		top: 115vh;
-		left: 86vw;
+		top: 100%;
+		left: 86%;
 	}
 	to{
-		top: 115vh;
-		left: 60vw;
+		top: 100%;
+		left: 60%;
 	}
 }
 	
@@ -103,9 +103,9 @@
 		font-size: 1.5em;
 
 		position: absolute;
-		top: 130vh;
-		left: 90vw;
-		transform: translate(-50vw,-50vh);
+		top: 100%;
+		left: 70%;
+		transform: translate(-50%,-50%);
 	}
 	.span::before{ /*Убираю анимацию при наведении*/
 		display: none;
@@ -133,36 +133,49 @@
 		top: 55%;
 		left: 105%;
 
-		width: 90vw;
+		width: 90%;
 	}
-	.pageOne{
-		width: 118vw;
-		height: 250vh;
 
-		margin-left: -3vw;
-		top: 110vh;
+/*Отдельные настройки для разных устройств с разной шириной*/
+
+@media (max-width: 550px){
+	svg{/*позиционирую svg*/
+		left: 70%;
 	}
-	.story{
+	.img{/*позиционирую и задаю размер фотографии*/
+		width: 70%;
+		left: 9%;
+	}
+	.pageOne{/*Растягивание второй страницы, цвет*/
+		width: 120%;
+		height: 250%;
+
+		margin: 0 0% 0 -3%;
+
+		top: 110%;
+	}
+	.story{/*цвет, размер и позиция заголовка*/
 		font-size: 2.5em;
 
-		width: 80vw;
+		width: 80%;
 
-		margin: -3vh 0 0 53vw;
 		position: absolute;
+		top: 3%;
+		left: 55%;
 	}
-	.ficha::before{
+	.ficha::before{/*красный круг, появляющийся при  наведении на IT*/
 		content: "";
 
 		display: inline-block;
 
-		width: 15vw;
-		height: 7.8vh;
+		width: 15%;
+		height: 50%;
 
 		transform: scale(0);
 
 		position: absolute;
-		top: 6vh;
-		left: 47.5vw;
+		top: 50%;
+		left: 51%;
 
 		border-radius: 50%;
 
@@ -170,11 +183,11 @@
 
 		transition: all 1s ease;
 	}
-	.stars{
+	.stars{/*размер звёзд и позиция*/
 		width: 90%;
-		height: 250vh;
+		height: 100%;
 	}
-	@keyframes flyStars{
+	@keyframes flyStars{/*анимация движения звёзд*/
 		from{
 			left: -10%;
 		}
@@ -185,65 +198,76 @@
 			left: -10%;
 		}
 }
-	.grow{
-		width: 80vw;
+	.grow{/*ширина контента  и его расположение*/
+		width: 80%;
 
-		position: relative;
-		top: -228vh;
-		left: 15vw;
+		position: absolute;
+		top: 8%;
+		left: 13%;
 	}
-	.rost{
-		width: 90vw;
-		height: 45vh;
+	.rost{/*иллюстрация*/
+		width: 80%;
+		height: 17%;
 
-		top: 48vh;
-		left: 10vw;
+		top: 16%;
+		left: 5%;
 	}
-	.whoIm:nth-child(2){
-		position: relative;
-		top: 60vh;
+	.whoIm:nth-child(2){/*вторая часть контейнера должна быть ниже первой*/
+		position: absolute;
+		top: 700%;
+		left: 0%;
 	}
-	.pc{
-		width: 80vw;
-		height: 40vh;
+	.pc{/*иллюстрация*/
+		width: 80%;
+		height: 18%;
 
-		top: 200vh; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
-		left: 15vw;
+		top: 70%; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
+		left: 10%;
  	}
+
+
+ 	.pageTwo{
+ 		width: 120%;
+		height: 120%;
+
+		margin-left: -3%;
+
+		top: 363%;
+ 	}
+ 	.mFDL{
+		width: 70%;
+
+		position: absolute;
+		top: 0%;
+		left: 30%;
+
+		padding-left: 50%;
+	}
+	.sclboy{
+		top: 20%;
+		left: 20%;
+
+		width: 60%;
+	}
 }
 
-
-/*Планшеты будут адаптированы потом (надеюсь))0)*/ 
-
-/*Отдельные настройки для разных устройств с разной шириной*/
-
-@media (max-width: 550px){
-	svg{/*позиционирую svg*/
-		left: 70%;
-	}
-	.img{/*позиционирую и задаю размер фотографии*/
-		width: 70vw;
-		left: 9%;
-	}
-
-}
 @media (max-width: 500px){
 	svg{/*позиционирую svg*/
 		top: 45%;
 		left: 70%;
 	}
 	.img{/*задаю размер (от контейнера!) фотографии*/
-		width: 150%;
+		width: 100%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 55vw;
-		height: 50vh;
+		width: 55%;
+		height: 50%;
 
 		top: -5%;
 		left: 0%;
 	}
 	.span{/*опускаю кнопку ниже*/
-		top: 135vh;
+		top: 135%;
 	}
 }
 
@@ -253,17 +277,17 @@
 		left: 70%;
 	}
 	.img{/*задаю размер (от контейнера!) фотографии*/
-		width: 150%;
+		width: 100%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 55vw;
-		height: 50vh;
+		width: 55%;
+		height: 50%;
 
 		top: -5%;
 		left: 8%;
 	}
 	.span{/*опускаю кнопку ниже*/
-		top: 135vh;
+		top: 135%;
 	}
 }
 /*Рпзмер текста для устройств с шириной от 450 до 1100 пикселей*/
@@ -278,15 +302,15 @@
 
 @media (max-width: 449px){
 	svg{/*позиционирую svg*/
-		top: 45%;
+		top: 55%;
 		left: 65%;
 	}
 	.img{/*задаю размер (от контейнера!) фотографии*/
-		width: 150%;
+		width: 100%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 55vw;
-		height: 55vh;
+		width: 55%;
+		height: 55%;
 
 		top: -5%;
 		left: 8%;
@@ -296,18 +320,18 @@
 	}
 	.span{/*задаю размер текста кнопке*/
 		font-size: 1em;
-		top: 135vh;
+		top: 135%;
 	}
 }
 
 @media (max-width: 400px){
 	svg{/*позиционирую svg*/
-		top: 45%;
-		left: 65%;
+		top: 50%;
+		left: 62%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 60vw;
-		height: 0vh;
+		width: 60%;
+		height: 0%;
 
 		top: 0%;
 		left: 0%;
@@ -320,10 +344,10 @@
 	}
 }
 
-@media (max-width: 411px){
+@media (max-width: 365px){
 	.svg{ /*Позиционирую svg*/
-		top: 45%;
-		left: 64%;
+		top: 55%;
+		left: 54%;
 
 		width: 97%;
 	}
@@ -331,14 +355,14 @@
 		width: 100%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 100vw;
-		height: 50vh;
+		width: 120%;
+		height: 120%;
 
-		top: -1%;
-		left: 1.5%;
+		top: -11%;
+		left: -11%;
 	}
 	.fnln{/*задаю размер текста имени и фамилии*/
-		font-size: 1.2em;
+		font-size: 1.4em;
 	}
 	.span{/*задаю размер текста кнопке*/
 		font-size: 1.4em;
@@ -368,11 +392,11 @@
 		top: 52%;
 		left: 88%;
 
-		width: 97vw;
+		width: 97%;
 	}
 	.image{/*задаю размер и позиционирую контейнер фотографии*/
-		width: 105vw;
-		height: 50vh;
+		width: 105%;
+		height: 50%;
 
 		top: 2%;
 		left: 0%;
