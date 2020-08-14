@@ -358,7 +358,7 @@ path{ /*Задаю стили и появление квадрата*/
 	position: absolute;
 	top: 202%;
 
-	background-color: rgba(255,0,0,0.5);
+	background-color: rgba(255,255,255);
 }
 .mFDL{
 	color: black;
@@ -394,10 +394,17 @@ path{ /*Задаю стили и появление квадрата*/
 		transform: scale(1) translate(-30%, -5%);
 	}
 }
-.sclboy{
+.blin{
 	position: absolute;
 	top: 20%;
-	left: 10%;
+	left: 45%;
+
+	color: rgba(0,0,0,0.5);
+}
+.sclboy{
+	position: absolute;
+	top: 25%;
+	left: 50%;
 
 	width: 40%;
 }
