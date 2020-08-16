@@ -228,7 +228,7 @@
 
  	.pageTwo{
  		width: 121%;
-		height: 130%;
+		height: 110%;
 
 		margin-left: -3%;
 
@@ -251,9 +251,9 @@
 	}
 	.sclboy{
 		top: 20%;
-		left: 20%;
+		left: 10%;
 
-		width: 60%;
+		width: 80%;
 	}
 }
 

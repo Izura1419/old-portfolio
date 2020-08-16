@@ -36,7 +36,6 @@ check();// Вызов функции прослушивателя во врем�
 	promise.then;
 }
 
-
 /*Ввожу функцию, которая возвращает имя и фамилию на свои места и убирает кнопку*/
 function reverReverse(){
 	name.style.transform = "translate(-50%,-50%)";
@@ -44,3 +43,17 @@ function reverReverse(){
 
 	open.style.opacity = "0";
 }
+
+
+let sclboy = document.querySelector(".sclboy");
+
+	sclboy.onclick = function(){
+		let za = document.createElement("span");
+		za.id = "eEZa";
+		za.innerHTML = "за ";
+		
+		function add(){
+			sclboy.appendChild(za);
+		}
+		add();
+	}
