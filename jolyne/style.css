@@ -350,7 +350,7 @@ path{ /*Задаю стили и появление квадрата*/
 
 .pageTwo{ /*Растягивание третьей страницы, цвет*/
 	width: 100%;
-	height: 70%;
+	height: 100%;
 
 	margin-left: -1%;
 	padding: 0;
@@ -396,18 +396,62 @@ path{ /*Задаю стили и появление квадрата*/
 }
 .blin{
 	position: absolute;
-	top: 25%;
+	top: 20%;
 	left: 45%;
 
 	color: rgba(0,0,0,0.5);
 }
 .sclboy{
 	position: absolute;
-	top: 35%;
-	left: 10%;
+	top: 30%;
+	left: 50%;
 
-	width: 80%;
+	width: 40%;
+}
+.sclboy:hover{
+	cursor: pointer;
 }
 #eEZa{
 	color: red;
+}
+.cPlus{
+	position: absolute;
+	top: 13%;
+	left: 5%;
+
+	width: 40%;
+	height: 70%;
+
+	background-image: url(img/anime/cPlus.png);
+	background-size: cover;
+
+	animation: changesImg 8s step-start 0s infinite;
+}
+@keyframes changesImg{
+	from{
+	}
+	20%{
+		background-image: url(img/anime/cPlus.png);
+	}
+	40%{
+		background-image: url(img/anime/cPlus1.png);
+	}
+	50%{
+		background-image: url(img/anime/cPlus2.png);
+	}
+	60%{
+		background-image: url(img/anime/cPlus3.png);
+	}
+	70%{
+		background-image: url(img/anime/cPlus4.png);
+	}
+	80%{
+		background-image: url(img/anime/cPlus5.png);
+	}
+	90%{
+		background-image: url(img/anime/cPlus6.png);
+	}
+	to{
+		background-image: url(img/anime/cPlus7.png);
+	}
 }

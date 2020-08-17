@@ -228,7 +228,7 @@
 
  	.pageTwo{
  		width: 121%;
-		height: 110%;
+		height: 150%;
 
 		margin-left: -3%;
 
@@ -250,10 +250,18 @@
 		font-size: 1.1em;
 	}
 	.sclboy{
-		top: 20%;
+		top: 50%;
 		left: 10%;
 
 		width: 80%;
+	}
+	.cPlus{
+		position: absolute;
+		top: 15%;
+		left: 5%;
+
+		width: 90%;
+		height: 30%;
 	}
 }
 
