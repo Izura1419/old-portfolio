@@ -370,6 +370,7 @@ path{ /*Задаю стили и появление квадрата*/
 	position: absolute;
 	top: 0%;
 	left: 40%;
+	transform: translate(-50%,-50%);
 
 	padding-left: 50%;
 }
@@ -454,4 +455,70 @@ path{ /*Задаю стили и появление квадрата*/
 	to{
 		background-image: url(img/anime/cPlus7.png);
 	}
+}
+.pageThree{
+	width: 104%;
+	height: 100%;
+
+	position: absolute;
+	top: 304%;
+	left: -4%;
+
+	background-color: black;
+}
+.comeBack{
+	color: white;
+
+	font-size: 3em;
+
+	width: 30%;
+	padding-left: 25%;
+
+	position: absolute;
+	top: 9%;
+	left: 40%;
+	transform: translate(-50%,-50%);
+}
+.comeBack::before{
+	content: "Как я вернулся? Как я вернулся?";
+	font-size: 0em;
+	transition: all 2s ease;
+}
+.comeBack:hover::before{
+	font-size: 1em;
+}
+.summer{
+	color: white;
+
+	width: 50%;
+
+	position: absolute;
+	top: 30%;
+	left: 10%;
+}
+.devLan{
+	color: blue;
+
+	cursor: pointer;
+}
+.josGif{
+	position: absolute;
+	top: 30%;
+	left: 65%;
+
+	transition: all 5s linear;
+}
+.josGif:hover{
+	transform: rotateZ(-360deg);
+}
+.ySlf{
+	display: none;
+	color: red;
+
+	width: 100%;
+
+	font-size: 14em;
+
+	position: absolute;
+	top: 20%;
 }

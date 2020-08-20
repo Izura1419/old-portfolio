@@ -57,3 +57,54 @@ let sclboy = document.querySelector(".sclboy");
 		}
 		add();
 	}
+
+function get(max,min){
+	let f = Math.floor(Math.random() * (max - min + 1)) + min;
+	return f;
+}
+
+	let oneDL = document.querySelector(".oneDL");
+	let twoDL = document.querySelector(".twoDL");
+	let threeDL = document.querySelector(".threeDL");
+
+	function stir(language){
+	let getNum = get(3,1);
+		if(getNum == 1){
+			language.innerHTML = "html";
+		}
+		if(getNum == 2){
+			language.innerHTML = "css";
+		}
+		if(getNum == 3){
+			language.innerHTML = "js";
+		}
+	}
+	oneDL.onclick = function(){
+		stir(oneDL);
+		stir(twoDL);
+		stir(threeDL);
+	}
+	twoDL.onclick = function(){
+		stir(oneDL);
+		stir(twoDL);
+		stir(threeDL);
+	}
+	threeDL.onclick = function(){
+		stir(oneDL);
+		stir(twoDL);
+		stir(threeDL);
+	}
+
+	let wrapper = document.querySelector(".wrapper");
+	let ySlf = document.querySelector(".ySlf");
+
+function screamer(){
+	wrapper.style.display = "none";
+	ySlf.style.display = "inline-block";
+}
+function silence(){
+	wrapper.style.display = "inline-block";
+	ySlf.style.display = "none";
+}
+	setInterval(screamer, 10000);
+	setInterval(silence, 10500);

@@ -267,6 +267,44 @@
 		width: 70%;
 		height: 26%;
 	}
+	.pageThree{
+		width: 121%;
+		height: 200%;
+
+		position: absolute;
+		top: 553%;
+		left: -1%;
+	}
+	.comeBack{
+		width: 35%;
+		padding-left: 25%;
+
+		position: absolute;
+		top: 10%;
+		left: 25%;
+		transform: translate(-50%,-50%);
+	}
+	.summer{
+		width: 90%;
+
+		position: absolute;
+		top: 55%;
+		left: 5%;
+	}
+	.josGif{
+		position: absolute;
+		top: 25%;
+		left: 10%;
+	}
+	.ySlf{
+		width: 50%;
+
+		font-size: 12em;
+
+		position: absolute;
+		top: 30%;
+		left: 60%;
+	}
 }
 
 @media (max-width: 500px){
