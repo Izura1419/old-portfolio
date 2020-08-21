@@ -151,7 +151,7 @@
 		height: 100%;
 	}
 	.pageOne{/*Растягивание второй страницы, цвет*/
-		width: 121%;
+		width: 121.5%;
 		height: 280%;
 
 		margin: 0 0% 0 -3%;
@@ -302,7 +302,7 @@
 		font-size: 12em;
 
 		position: absolute;
-		top: 50%;
+		top: 40%;
 		left: 60%;
 	}
 }
