@@ -479,12 +479,12 @@ path{ /*Задаю стили и появление квадрата*/
 	left: 40%;
 	transform: translate(-50%,-50%);
 }
-.comeBack::before{
+.comeBack::after{
 	content: "Как я вернулся? Как я вернулся?";
 	font-size: 0em;
 	transition: all 2s ease;
 }
-.comeBack:hover::before{
+.comeBack:hover::after{
 	font-size: 1em;
 }
 .summer{

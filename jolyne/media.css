@@ -269,10 +269,10 @@
 	}
 	.pageThree{
 		width: 121%;
-		height: 230%;
+		height: 250%;
 
 		position: absolute;
-		top: 573%;
+		top: 583%;
 		left: 0%;
 	}
 	.comeBack{
@@ -280,7 +280,7 @@
 		padding-left: 25%;
 
 		position: absolute;
-		top: 15%;
+		top: 10%;
 		left: 25%;
 		transform: translate(-50%,-50%);
 	}
@@ -288,12 +288,12 @@
 		width: 90%;
 
 		position: absolute;
-		top: 60%;
+		top: 50%;
 		left: 6%;
 	}
 	.josGif{
 		position: absolute;
-		top: 30%;
+		top: 25%;
 		left: 10%;
 	}
 	.ySlf{
