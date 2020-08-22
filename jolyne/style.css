@@ -237,10 +237,10 @@ path{ /*Задаю стили и появление квадрата*/
 
 
 .pageOne{ /*Растягивание второй страницы, цвет*/
-	width: 95%;
+	width: 98%;
 	height: 100%;
 
-	margin-left: 1%;
+	margin-left: 0.5%;
 	padding: 0;
 
 	position: absolute;
@@ -261,6 +261,8 @@ path{ /*Задаю стили и появление квадрата*/
 }
 .ficha{/*отступ фичи*/
 	margin-left: 1%;
+
+	color: blue;
 }
 .ficha::before{/*красный круг, появляющийся при  наведении на IT*/
 	content: "";
@@ -274,7 +276,7 @@ path{ /*Задаю стили и появление квадрата*/
 
 	position: absolute;
 	top: 3%;
-	left: 87%;
+	left: 84%;
 
 	border-radius: 50%;
 
@@ -358,7 +360,7 @@ path{ /*Задаю стили и появление квадрата*/
 	position: absolute;
 	top: 202%;
 
-	background-color: rgba(255,255,255);
+	background-color: white;
 }
 .mFDL{
 	color: black;
@@ -467,7 +469,7 @@ path{ /*Задаю стили и появление квадрата*/
 	background-color: black;
 }
 .comeBack{
-	color: white;
+	color: blue;
 
 	font-size: 3em;
 
@@ -521,4 +523,101 @@ path{ /*Задаю стили и появление квадрата*/
 
 	position: absolute;
 	top: 20%;
+}
+.pageFour{
+	width: 104%;
+	height: 100%;
+
+	position: absolute;
+	top: 404%;
+	left: -4%;
+
+	background-color: white;
+}
+.myProjects{
+	display: inline-block;
+	color: blue;
+
+	font-size: 4em;
+
+	width: 30%;
+	padding-left: 25%;
+
+	position: absolute;
+	top: 2%;
+	left: 40%;
+
+	transition: all 1s ease;
+	cursor: pointer;
+}
+.allWrd{
+	display: inline-block;
+	transition: all 5s ease-out;
+}
+.turnEverAroun{
+	display: inline-block;
+	position: absolute;
+	top: 16%;
+	left: 45%;
+
+	color: rgba(0,0,0,0.5);
+	transition: all 2s ease-out;
+}
+.practice{
+	color: black;
+
+	width: 45%;
+
+	position: absolute;
+	top: 27%;
+	left: 45%;
+
+	transition: all 5s ease-out;
+}
+.practice:hover{
+	letter-spacing: 5px;
+}
+.jolGif{
+	position: absolute;
+	top: 15%;
+	left: 5%;
+
+	width: 30%;
+
+	transition: all 5s linear;
+	animation: infin 30s ease 0s infinite;
+}
+@keyframes infin{
+	from{
+		top: 15%;
+		left: 5%;
+	}
+	12%{
+		top: 13%;
+		left: 3%;
+	}
+	24%{
+		top: 15%;
+		left: -2%;
+	}
+	36%{
+		top: 17%;
+		left: 0%;
+	}
+	60%{
+		top: 13%;
+		left: 12%;
+	}
+	82%{
+		top: 15%;
+		left: 14%;
+	}
+	94%{
+		top: 17%;
+		left: 12%;
+	}
+	to{
+		top: 15%;
+		left: 5%;
+	}
 }

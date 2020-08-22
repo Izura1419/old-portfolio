@@ -99,8 +99,8 @@ function get(max,min){
 	let ySlf = document.querySelector(".ySlf");
 
 function screamer(){
-	wrapper.style.display = "none";
-	ySlf.style.display = "inline-block";
+	//wrapper.style.display = "none";
+	//ySlf.style.display = "inline-block";
 }
 function silence(){
 	wrapper.style.display = "inline-block";
@@ -108,3 +108,151 @@ function silence(){
 }
 	setInterval(screamer, 10000);
 	setInterval(silence, 10500);
+
+let turnEverAroun = document.querySelector(".turnEverAroun");
+let projects = document.querySelector(".myProjects");
+
+let wrd = document.querySelector(".wrd");
+let wrd1 = document.querySelector(".wrd1");
+let wrd2 = document.querySelector(".wrd2");
+let wrd3 = document.querySelector(".wrd3");
+let wrd4 = document.querySelector(".wrd4");
+let wrd5 = document.querySelector(".wrd5");
+let wrd6 = document.querySelector(".wrd6");
+let wrd7 = document.querySelector(".wrd7");
+let wrd8 = document.querySelector(".wrd8");
+let wrd9 = document.querySelector(".wrd9");
+
+	function flipOver(letter){
+	let getNum = get(5,1);
+		if(getNum == 1){
+			letter.style.transform = "rotateX(180deg)";
+			letter.style.color = "black";
+		}
+		if(wrd.style.color == "black" && wrd1.style.color == "black" && wrd2.style.color == "black" &&
+		wrd3.style.color == "black" && wrd4.style.color == "black" && wrd5.style.color == "black" &&
+		wrd6.style.color == "black" && wrd7.style.color == "black" && wrd8.style.color == "black" &&
+		wrd9.style.color == "black"){
+			turnEverAroun.style.display = "none";
+		}
+	}
+	wrd.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd1.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd2.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd3.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd4.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd5.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd6.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd7.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd8.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
+	wrd9.onclick = function(){
+		flipOver(wrd);
+		flipOver(wrd1);
+		flipOver(wrd2);
+		flipOver(wrd3);
+		flipOver(wrd4);
+		flipOver(wrd5);
+		flipOver(wrd6);
+		flipOver(wrd7);
+		flipOver(wrd8);
+		flipOver(wrd9);
+	}
