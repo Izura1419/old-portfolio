@@ -256,3 +256,76 @@ let wrd9 = document.querySelector(".wrd9");
 		flipOver(wrd8);
 		flipOver(wrd9);
 	}
+
+	let dataAndTime = document.querySelector(".dataAndTime");
+
+	let today = new Date();
+	
+	let hours = today.getHours();
+	let minutes = today.getMinutes();
+	
+	let timeOfDay = (hours < 6) ? "Ночь" : 
+	(hours < 12) ? "Утро" :
+	(hours < 18) ? "День" :
+	"Вечер" ;
+
+	dataAndTime.innerHTML = timeOfDay + ". " + hours + ":" + minutes;
+
+let site1Screen1 = document.querySelector(".site1Screen1");
+let site1Screen2 = document.querySelector(".site1Screen2");
+let site1Screen3 = document.querySelector(".site1Screen3");
+
+let startPart = document.querySelector(".startPart2");
+
+function stopViewing(screen){
+		if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
+		    screen.style.width = "90%";
+			screen.style.borderRadius = "0%";
+			screen.style.clipPath = "none";
+			screen.style.position = "relative";
+			screen.style.left = "5%";
+			screen.style.paddingBottom = "5%";
+	  } 
+	  else{
+	  	screen.style.width = "30%";
+		screen.style.borderRadius = "0%";
+		screen.style.clipPath = "none";
+		screen.style.top = "35%";
+		screen.style.left = "60%";
+	  }
+	}
+
+function clickForAllScreens(screen){
+			if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
+			    screen.style.width = "100%";
+				screen.style.borderRadius = "50%";
+				screen.style.clipPath = "circle(50% at 50% 50%)";
+				screen.style.top = "40%";
+				screen.style.left = "0%";
+				startPart.style.top = "75%";
+	  } 
+	  else{
+	  	screen.style.width = "60%";
+		screen.style.borderRadius = "50%";
+		screen.style.clipPath = "circle(50% at 50% 50%)";
+		screen.style.top = "15%";
+		screen.style.left = "22%";
+	  }
+
+	/*Ввожу промис через стрелочную функцию, который отсчитывает время после нажатия на кнопку и запускает функцию reverReverse()*/
+	let promise = new Promise(resolve => {
+ 		setTimeout(() => resolve(stopViewing(screen)), 6000);
+	});
+	/*Создаю условие для работы промиса, в моём случае это равно true*/
+	promise.then;
+}
+
+	site1Screen1.onclick = function(){
+		clickForAllScreens(this);
+	}
+	site1Screen2.onclick = function(){
+		clickForAllScreens(this);
+	}
+	site1Screen3.onclick = function(){
+		clickForAllScreens(this);
+	}

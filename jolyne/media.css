@@ -348,7 +348,79 @@
 
 		animation: infin 10s ease 0s infinite;
 	}
+	.pageFive{
+		width: 121%;
+		height: 250%;
+
+		position: absolute;
+		top: 1033%;
+		left: 0%;
+	}
+	.firstSite{
+		font-size: 3em;
+
+		width: 95%;
+
+		position: absolute;
+		top: 2%;
+		left: 5%;
+	}
+	.start{
+		color: white;
+
+		width: 90%;
+
+		position: absolute;
+		top: 10%;
+		left: 5%;
+	}
+	.startPart2{
+		position: absolute;
+		top: 50%;
+		left: 5%;
+	}
+	.dataAndTime{
+		color: white;
+		font-size: 2em;
+
+		position: absolute;
+		top: 37%;
+		left: 25%;
+	}
+	.site1Screen1,.site1Screen2,.site1Screen3{
+		position: absolute;
+
+		width: 90%;
+
+		transition: all 2s ease;
+
+		cursor: pointer;
+	}
+	.site1Screen1:hover,.site1Screen2:hover,.site1Screen3:hover{
+		z-index: 2;
+
+		width: 91%;
+
+		transform: scale(1.1);
+	}
+	.site1Screen1{
+		top: 40%;
+		left: 5%;
+	}
+	.site1Screen2{
+		top: 67%;
+		left: 5%;
+	}
+	.site1Screen3{
+		position: absolute;
+		top: 77%;
+		left: 5%;
+	}
+	.startsAnimeGor, .startsAnimeVer{
+		display: none;
+	}
 }
+
 
 @media (max-width: 500px){
 	svg{/*позиционирую svg*/
