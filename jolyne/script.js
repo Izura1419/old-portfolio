@@ -297,11 +297,11 @@ function stopViewing(screen){
 
 function clickForAllScreens(screen){
 			if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
-			    screen.style.width = "100%";
+			    screen.style.width = "95%";
 				screen.style.borderRadius = "50%";
 				screen.style.clipPath = "circle(50% at 50% 50%)";
 				screen.style.top = "40%";
-				screen.style.left = "0%";
+				screen.style.left = "0";
 				startPart.style.top = "75%";
 	  } 
 	  else{

@@ -350,7 +350,7 @@
 	}
 	.pageFive{
 		width: 121%;
-		height: 250%;
+		height: 270%;
 
 		position: absolute;
 		top: 1033%;
@@ -376,7 +376,7 @@
 	}
 	.startPart2{
 		position: absolute;
-		top: 50%;
+		top: 70%;
 		left: 5%;
 	}
 	.dataAndTime{
@@ -384,7 +384,7 @@
 		font-size: 2em;
 
 		position: absolute;
-		top: 37%;
+		top: 42%;
 		left: 25%;
 	}
 	.site1Screen1,.site1Screen2,.site1Screen3{
@@ -404,16 +404,16 @@
 		transform: scale(1.1);
 	}
 	.site1Screen1{
-		top: 40%;
+		top: 45%;
 		left: 5%;
 	}
 	.site1Screen2{
-		top: 67%;
+		top: 77%;
 		left: 5%;
 	}
 	.site1Screen3{
 		position: absolute;
-		top: 77%;
+		top: 92%;
 		left: 5%;
 	}
 	.startsAnimeGor, .startsAnimeVer{
