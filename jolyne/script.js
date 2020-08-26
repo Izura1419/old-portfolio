@@ -302,7 +302,7 @@ function clickForAllScreens(screen){
 				screen.style.clipPath = "circle(50% at 50% 50%)";
 				screen.style.top = "45%";
 				screen.style.left = "0";
-				startPart.style.top = "85%";
+				startPart.style.top = "80%";
 	  } 
 	  else{
 	  	screen.style.width = "60%";
