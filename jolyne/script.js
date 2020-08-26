@@ -300,7 +300,7 @@ function clickForAllScreens(screen){
 			    screen.style.width = "95%";
 				screen.style.borderRadius = "50%";
 				screen.style.clipPath = "circle(50% at 50% 50%)";
-				screen.style.top = "40%";
+				screen.style.top = "45%";
 				screen.style.left = "0";
 				startPart.style.top = "75%";
 	  } 

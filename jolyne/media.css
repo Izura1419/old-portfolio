@@ -350,7 +350,7 @@
 	}
 	.pageFive{
 		width: 121%;
-		height: 270%;
+		height: 290%;
 
 		position: absolute;
 		top: 1033%;
@@ -363,7 +363,7 @@
 
 		position: absolute;
 		top: 2%;
-		left: 5%;
+		left: 4%;
 	}
 	.start{
 		color: white;
@@ -376,7 +376,7 @@
 	}
 	.startPart2{
 		position: absolute;
-		top: 70%;
+		top: 60%;
 		left: 5%;
 	}
 	.dataAndTime{
