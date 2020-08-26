@@ -350,7 +350,7 @@
 	}
 	.pageFive{
 		width: 121%;
-		height: 290%;
+		height: 300%;
 
 		position: absolute;
 		top: 1033%;
@@ -376,7 +376,7 @@
 	}
 	.startPart2{
 		position: absolute;
-		top: 60%;
+		top: 57%;
 		left: 5%;
 	}
 	.dataAndTime{
@@ -413,7 +413,7 @@
 	}
 	.site1Screen3{
 		position: absolute;
-		top: 92%;
+		top: 85%;
 		left: 5%;
 	}
 	.startsAnimeGor, .startsAnimeVer{
