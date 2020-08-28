@@ -99,8 +99,8 @@ function get(max,min){
 	let ySlf = document.querySelector(".ySlf");
 
 function screamer(){
-	//wrapper.style.display = "none";
-	//ySlf.style.display = "inline-block";
+	wrapper.style.display = "none";
+	ySlf.style.display = "inline-block";
 }
 function silence(){
 	wrapper.style.display = "inline-block";

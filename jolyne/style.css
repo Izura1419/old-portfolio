@@ -739,3 +739,59 @@ path{ /*Задаю стили и появление квадрата*/
 		left: 0%;
 	}
 }
+.pageSix{
+	width: 104%;
+	height: 100%;
+
+	position: absolute;
+	top: 604%;
+	left: -4%;
+
+	background-color: white;
+}
+.second{
+	color: blue;
+
+	font-size: 3em;
+
+	width: 30%;
+
+	position: absolute;
+	top: 2%;
+	left: 45%;
+
+	text-decoration: none;
+}
+.registration{
+	color: black;
+
+	width: 80%;
+
+	position: absolute;
+	top: 15%;
+	left: 10%;
+}
+.screensForTwoSite{
+	width: 95%;
+	height: 30%;
+
+	display: flex;
+	justify-content: space-around;
+
+	position: absolute;
+	top: 60%;
+	left: 52%;
+	transform: translate(-50%,-50%);
+}
+.site2Screen1,.site2Screen2,.site2Screen3{
+	width: 30%;
+	height: 95%;
+
+	transition: all .5s ease;
+}
+.site2Screen1:hover, .site2Screen2:hover, .site2Screen3:hover{
+	width: 38%;
+	height: 115%;
+
+	margin-top: -1.5%;
+}
