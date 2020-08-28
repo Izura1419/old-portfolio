@@ -448,17 +448,17 @@
 		flex-direction: column;
 
 		position: absolute;
-		top: 60%;
+		top: 70%;
 		left: 52%;
 		transform: translate(-50%,-50%);
 	}
 	.site2Screen1,.site2Screen2,.site2Screen3{
 		width: 90%;
-		height: 25%;
+		height: 30%;
 	}
 	.site2Screen1:hover, .site2Screen2:hover, .site2Screen3:hover{
 		width: 100%;
-		height: 28%;
+		height: 33%;
 
 		margin-top: -1.5%;
 		margin-left: -2%;
