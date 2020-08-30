@@ -359,7 +359,7 @@
 	.firstSite{
 		font-size: 3em;
 
-		width: 95%;
+		width: 91%;
 
 		position: absolute;
 		top: 2%;
@@ -428,7 +428,7 @@
 	.second{
 		font-size: 3em;
 
-		width: 95%;
+		width: 50%;
 
 		position: absolute;
 		top: 2%;
@@ -465,7 +465,7 @@
 	}
 	.pageSeven{
 		width: 121%;
-		height: 150%;
+		height: 180%;
 
 		position: absolute;
 		top: 1533%;
@@ -478,7 +478,7 @@
 
 		position: absolute;
 		top: 2%;
-		left: 55%;
+		left: 50%;
 	}
 	.die{
 		width: 90%;
@@ -489,7 +489,7 @@
 	}
 	.site3Screen1,.site3Screen2,.site3Screen3{
 		position: absolute;
-		top: 65%;
+		top: 75%;
 		left: 5%;
 
 		width: 90%;
@@ -512,34 +512,34 @@
 	}
 	@keyframes showYouTwoOne{
 		from{
-			top: 65%;
+			top: 75%;
 		}
 		to{
-			top: 45%;
+			top: 55%;
 		}
 	}
 	@keyframes showYouTwoTwo{
 		from{
-			top: 45%;
+			top: 55%;
 		}
 		to{
-			top: 65%;
+			top: 75%;
 		}
 	}
 	@keyframes showYouThreeOne{
 		from{
-			top: 65%;
+			top: 75%;
 		}
 		to{
-			top: 75%;
+			top: 85%;
 		}
 	}
 	@keyframes showYouThreeTwo{
 		from{
-			top: 75%;
+			top: 85%;
 		}
 		to{
-			top: 65%;
+			top: 75%;
 		}
 	}
 }
