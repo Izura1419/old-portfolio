@@ -151,10 +151,10 @@
 		height: 100%;
 	}
 	.pageOne{/*Растягивание второй страницы, цвет*/
-		width: 122%;
+		width: 120%;
 		height: 280%;
 
-		margin: 0 0% 0 -3%;
+		margin: 0 0% 0 -1%;
 
 		top: 120%;
 	}
@@ -268,12 +268,12 @@
 		height: 26%;
 	}
 	.pageThree{
-		width: 121%;
+		width: 120%;
 		height: 250%;
 
 		position: absolute;
 		top: 583%;
-		left: 0%;
+		left: 1%;
 	}
 	.comeBack{
 		width: 35%;
@@ -349,12 +349,12 @@
 		animation: infin 10s ease 0s infinite;
 	}
 	.pageFive{
-		width: 121%;
+		width: 120%;
 		height: 300%;
 
 		position: absolute;
 		top: 1033%;
-		left: 0%;
+		left: 1%;
 	}
 	.firstSite{
 		font-size: 3em;
@@ -464,12 +464,12 @@
 		margin-left: -2%;
 	}
 	.pageSeven{
-		width: 121%;
+		width: 120%;
 		height: 180%;
 
 		position: absolute;
 		top: 1533%;
-		left: 0%;
+		left: 1%;
 	}
 	.third{
 		font-size: 3em;
@@ -489,7 +489,7 @@
 	}
 	.site3Screen1,.site3Screen2,.site3Screen3{
 		position: absolute;
-		top: 75%;
+		top: 70%;
 		left: 5%;
 
 		width: 90%;
@@ -512,34 +512,34 @@
 	}
 	@keyframes showYouTwoOne{
 		from{
-			top: 75%;
+			top: 70%;
 		}
 		to{
-			top: 55%;
+			top: 50%;
 		}
 	}
 	@keyframes showYouTwoTwo{
 		from{
-			top: 55%;
+			top: 50%;
 		}
 		to{
-			top: 75%;
+			top: 70%;
 		}
 	}
 	@keyframes showYouThreeOne{
 		from{
-			top: 75%;
+			top: 70%;
 		}
 		to{
-			top: 85%;
+			top: 80%;
 		}
 	}
 	@keyframes showYouThreeTwo{
 		from{
-			top: 85%;
+			top: 80%;
 		}
 		to{
-			top: 75%;
+			top: 70%;
 		}
 	}
 }
