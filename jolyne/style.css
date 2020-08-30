@@ -779,7 +779,7 @@ path{ /*Задаю стили и появление квадрата*/
 	justify-content: space-around;
 
 	position: absolute;
-	top: 60%;
+	top: 65%;
 	left: 52%;
 	transform: translate(-50%,-50%);
 }
@@ -794,4 +794,108 @@ path{ /*Задаю стили и появление квадрата*/
 	height: 115%;
 
 	margin-top: -1.5%;
+}
+.pageSeven{
+	width: 104%;
+	height: 100%;
+
+	position: absolute;
+	top: 704%;
+	left: -4%;
+
+	background-color: black;
+}
+.third{
+	color: blue;
+
+	font-size: 3em;
+
+	width: 30%;
+
+	position: absolute;
+	top: 2%;
+	left: 45%;
+
+	text-decoration: none;
+}
+.die{
+	color: white;
+
+	width: 40%;
+
+	position: absolute;
+	top: 15%;
+	left: 50%;
+}
+.epic{
+	color: blue;
+
+	cursor: pointer;
+}
+.site3Screen1,.site3Screen2,.site3Screen3{
+	opacity: none;
+
+	position: absolute;
+	top: 30%;
+	left: 10%;
+
+	width: 35%;
+
+	border: .1em solid white;
+
+	transition: all 2s ease;
+
+	cursor: pointer;
+}
+.site3Screen1{
+	z-index: 2;
+	opacity: auto;
+}
+@keyframes showYouOneOne{
+	from{
+		left: 10%;
+	}
+	to{
+		left: -10%;
+	}
+}
+@keyframes showYouOneTwo{
+	from{
+		left: -10%;
+	}
+	to{
+		left: 10%;
+	}
+}
+@keyframes showYouTwoOne{
+	from{
+		top: 30%;
+	}
+	to{
+		top: 10%;
+	}
+}
+@keyframes showYouTwoTwo{
+	from{
+		top: 10%;
+	}
+	to{
+		top: 30%;
+	}
+}
+@keyframes showYouThreeOne{
+	from{
+		top: 30%;
+	}
+	to{
+		top: 50%;
+	}
+}
+@keyframes showYouThreeTwo{
+	from{
+		top: 50%;
+	}
+	to{
+		top: 30%;
+	}
 }

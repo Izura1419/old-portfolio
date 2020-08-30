@@ -463,6 +463,85 @@
 		margin-top: -1.5%;
 		margin-left: -2%;
 	}
+	.pageSeven{
+		width: 121%;
+		height: 150%;
+
+		position: absolute;
+		top: 1533%;
+		left: 0%;
+	}
+	.third{
+		font-size: 3em;
+
+		width: 20%;
+
+		position: absolute;
+		top: 2%;
+		left: 55%;
+	}
+	.die{
+		width: 90%;
+
+		position: absolute;
+		top: 10%;
+		left: 5%;
+	}
+	.site3Screen1,.site3Screen2,.site3Screen3{
+		position: absolute;
+		top: 65%;
+		left: 5%;
+
+		width: 90%;
+	}
+	@keyframes showYouOneOne{
+		from{
+			left: 5%;
+		}
+		to{
+			left: -10%;
+		}
+	}
+	@keyframes showYouOneTwo{
+		from{
+			left: -10%;
+		}
+		to{
+			left: 5%;
+		}
+	}
+	@keyframes showYouTwoOne{
+		from{
+			top: 65%;
+		}
+		to{
+			top: 45%;
+		}
+	}
+	@keyframes showYouTwoTwo{
+		from{
+			top: 45%;
+		}
+		to{
+			top: 65%;
+		}
+	}
+	@keyframes showYouThreeOne{
+		from{
+			top: 65%;
+		}
+		to{
+			top: 75%;
+		}
+	}
+	@keyframes showYouThreeTwo{
+		from{
+			top: 75%;
+		}
+		to{
+			top: 65%;
+		}
+	}
 }
 
 

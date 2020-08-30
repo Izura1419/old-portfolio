@@ -329,3 +329,45 @@ function clickForAllScreens(screen){
 	site1Screen3.onclick = function(){
 		clickForAllScreens(this);
 	}
+let epic = document.querySelector(".epic");
+
+	epic.onclick = function(){
+		let whatYouCanDo = ["сдохнуть", "отправиться путешествовать автостопом", "устроить соревнования по сну", "наесться до отвала", "пробежать марафон", "сделать сто отжиманий", "взять велосипед и ехать куда глаза глядят", "смастерить плот и проплыть по реке", "прожить неделю без соцсетей", "посмотреть короткометражное аниме и расплакаться", "послушать все альбомы Короля и Шута"];
+		let numberOfElement = get(10,0);
+		this.innerHTML = whatYouCanDo[numberOfElement];
+	}
+
+let site3Screen1 = document.querySelector(".site3Screen1");
+let site3Screen2 = document.querySelector(".site3Screen2");
+let site3Screen3 = document.querySelector(".site3Screen3");
+
+	site3Screen1.onclick = function(){
+		site3Screen2.style.animation = "showYouOneOne 1s ease";
+		setTimeout(function(){
+			site3Screen2.style.animation = "showYouOneTwo 1s ease";
+		}, 1000);
+		site3Screen2.style.zIndex = 1;
+
+		site3Screen3.style.zIndex = 0;
+		site3Screen1.style.zIndex = 0;
+	}
+	site3Screen2.onclick = function(){
+		site3Screen3.style.animation = "showYouTwoOne 1s ease";
+		setTimeout(function(){
+			site3Screen3.style.animation = "showYouTwoTwo 1s ease";
+		}, 1000);
+		site3Screen3.style.zIndex = 1;
+
+		site3Screen1.style.zIndex = 0;
+		site3Screen2.style.zIndex = 0;
+	}
+	site3Screen3.onclick = function(){
+		site3Screen1.style.animation = "showYouThreeOne 1s ease";
+		setTimeout(function(){
+			site3Screen1.style.animation = "showYouThreeTwo 1s ease";
+		}, 1000);
+		site3Screen1.style.zIndex = 1;
+
+		site3Screen2.style.zIndex = 0;
+		site3Screen3.style.zIndex = 0;
+	}
