@@ -899,3 +899,82 @@ path{ /*Задаю стили и появление квадрата*/
 		top: 30%;
 	}
 }
+.pageEight{
+	width: 104%;
+	height: 100%;
+
+	position: absolute;
+	top: 804%;
+	left: -4%;
+
+	background-color: white;
+
+	transition: all .100s ease;
+}
+.fourth{
+	color: blue;
+
+	font-size: 3em;
+
+	width: 30%;
+
+	position: absolute;
+	top: 4%;
+	left: 42%;
+
+	text-decoration: none;
+}
+.paints{
+	color: black;
+
+	width: 80%;
+
+	position: absolute;
+	top: 25%;
+	left: 82%;
+	transform: translate(-50%,-50%);
+}
+.prikol{
+	color: black;
+
+	width: 80%;
+
+	position: absolute;
+	top: 35%;
+	left: 86.5%;
+	transform: translate(-50%,-50%);
+}
+.earnEpilepsy{
+	width: 25%;
+	height: 10%;
+
+	position: absolute;
+	top: 65%;
+	left: 51%;
+	transform: translate(-50%,-50%);
+
+	background-color: white;
+	color: black;
+
+	font-size: 1em;
+
+	cursor: pointer;
+
+	border: 0.1em solid black;
+
+	transition: all 2s ease;
+}
+.earnEpilepsy:hover{
+	width: 25%;
+	height: 30%;
+
+	padding-top: 5%;
+
+	font-size: 1.2em;
+
+	background-color: red;
+
+	border: none;
+
+	clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+}

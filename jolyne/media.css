@@ -154,7 +154,7 @@
 		width: 120%;
 		height: 280%;
 
-		margin: 0 0% 0 -1%;
+		margin: 0 0% 0 -0.5%;
 
 		top: 120%;
 	}
@@ -541,6 +541,48 @@
 		to{
 			top: 70%;
 		}
+	}
+	.pageEight{
+		width: 120%;
+		height: 100%;
+
+		position: absolute;
+		top: 1713%;
+		left: 1%;
+	}
+	.fourth{
+		font-size: 3em;
+
+		width: 20%;
+
+		position: absolute;
+		top: 2%;
+		left: 20%;
+	}
+	.paints{
+		width: 60%;
+
+		top: 20%;
+		left: 50%;
+	}
+	.prikol{
+		width: 30%;
+
+		top: 30%;
+		left: 50%;
+	}
+	.earnEpilepsy{
+		width: 65%;
+		height: 10%;
+
+		top: 50%;
+		left: 49%;
+
+		font-size: 1.3em;
+	}
+	.earnEpilepsy:hover{
+		width: 50%;
+		height: 25%;
 	}
 }
 

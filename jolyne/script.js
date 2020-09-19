@@ -371,3 +371,56 @@ let site3Screen3 = document.querySelector(".site3Screen3");
 		site3Screen2.style.zIndex = 0;
 		site3Screen3.style.zIndex = 0;
 	}
+
+
+let pageEight = document.querySelector(".pageEight");
+
+let earnEpilepsy = document.querySelector(".earnEpilepsy");
+
+	earnEpilepsy.onclick = function(){
+		if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
+		    earnEpilepsy.innerHTML = "Заработали?";
+			earnEpilepsy.style.color = "white";
+
+			earnEpilepsy.style.paddingBottom = "2%";
+			earnEpilepsy.style.paddingLeft = "0.5%";
+			earnEpilepsy.style.paddingTop = "1%";
+			earnEpilepsy.style.border = "0.5em solid white";
+		    earnEpilepsy.style.fontSize = "1.5em";
+
+		    earnEpilepsy.style.backgroundColor = "blue";
+
+		    earnEpilepsy.style.clipPath = "circle(50% at 50% 50%)";
+	  } 
+	  else{
+	  	earnEpilepsy.innerHTML = "Заработали?";
+		earnEpilepsy.style.color = "white";
+
+		earnEpilepsy.style.paddingBottom = "2%";
+		earnEpilepsy.style.paddingLeft = "0.5%";
+		earnEpilepsy.style.paddingTop = "1%";
+		earnEpilepsy.style.border = "0.5em solid white";
+
+		earnEpilepsy.style.backgroundColor = "blue";
+
+		earnEpilepsy.style.clipPath = "circle(30% at 50% 50%)";
+	  }
+
+		function set(){
+			setTimeout(changeBackgroundColor,0);
+		}
+
+		function changeBackgroundColor() {
+			let a = get(255,0);
+			let b = get(255,0);
+			let c = get(255,0);
+
+			let d = "rgb" + "(" + a + "," + b + "," + c + ")";
+
+			pageEight.style.backgroundColor = d ;
+
+			setTimeout(changeBackgroundColor,100);
+		}
+
+		set();
+	}
