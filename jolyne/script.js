@@ -106,8 +106,8 @@ function silence(){
 	wrapper.style.display = "inline-block";
 	ySlf.style.display = "none";
 }
-	setInterval(screamer, 10000);
-	setInterval(silence, 10500);
+	setInterval(screamer, 20000);
+	setInterval(silence, 10100);
 
 let turnEverAroun = document.querySelector(".turnEverAroun");
 let projects = document.querySelector(".myProjects");
@@ -423,4 +423,36 @@ let earnEpilepsy = document.querySelector(".earnEpilepsy");
 		}
 
 		set();
+	}
+	let pointOne = document.querySelector(".pointOne");
+	let pointTwo = document.querySelector(".pointTwo");
+	let pointThree = document.querySelector(".pointThree")
+
+setTimeout(createPointOne,1000);
+	function createPointOne(){
+		pointOne.style.display = "inline-block";
+			setTimeout(createPointTwo,3000);
+				function createPointTwo(){
+					pointTwo.style.display = "inline-block";
+						setTimeout(createPointThree,3000);
+							function createPointThree(){
+								pointThree.style.display = "inline-block";
+									setTimeout(deletePoints,3000);
+										function deletePoints(){
+											pointOne.style.display = "none";
+											pointTwo.style.display = "none";
+											pointThree.style.display = "none";
+
+											setTimeout(createPointOne,1000);
+				}
+			}
+		}
+	}
+
+	let site5Screen1 = document.querySelector(".site5Screen1");
+	let site5Screen2 = document.querySelector(".site5Screen2");
+
+	function getLocationPoint(screenFive,topPoint,leftPoint){
+		screenFive.style.top = topPoint + "%";
+		screenFive.style.left = leftPoint + "%";
 	}

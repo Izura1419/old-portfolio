@@ -584,6 +584,41 @@
 		width: 50%;
 		height: 25%;
 	}
+	.pageNine{
+		width: 120%;
+		height: 150%;
+
+		position: absolute;
+		top: 1813%;
+		left: 1%;
+	}
+	.andOther{
+		font-size: 3em;
+
+		width: 80%;
+
+		position: absolute;
+		top: 4%;
+		left: 55%;
+	}
+	.theyDontExist{
+		width: 80%;
+
+		position: absolute;
+		top: 20%;
+		left: 52%;
+		transform: translate(-50%,-50%);
+	}
+	.site5Screen1,.site5Screen2{
+		position: absolute;
+		top: 40%;
+		left: 10%;
+
+		width: 80%;
+	}
+	.site5Screen2{
+		top: 70%;
+	}
 }
 
 
