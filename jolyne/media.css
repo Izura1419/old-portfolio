@@ -619,6 +619,91 @@
 	.site5Screen2{
 		top: 70%;
 	}
+	.pageTen{
+		width: 120%;
+		height: 120%;
+
+		position: absolute;
+		top: 1967%;
+		left: 1%;
+	}
+	.imageForNine{
+		position: absolute;
+		top: 25%;
+		left: -70%;
+
+		width: 230%;
+		height: 50%;
+
+		transform: rotateZ(90deg);
+	}
+	.theEnd{
+		font-size: 3em;
+
+		width: 60%;
+
+		position: absolute;
+		top: 7%;
+		left: 51%;
+	}
+	.cyberBulling{
+		width: 80%;
+
+		position: absolute;
+		top: 30%;
+		left: 52%;
+		transform: translate(-50%,-50%);
+	}
+	.passwordForEmail{
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+
+		padding-left: 10%;
+
+		width: 70%;
+		height: 5%;
+
+		font-size: 2em;
+	}
+	.labelForInput::before{
+		content: ""; 
+
+		position: absolute; 
+		top:50%; 
+		left: 50%; 
+		transform: translate(-50%,-50%); 
+	}
+	.labelForInput:hover::before{
+		width: 80%;
+	}
+	.buttonForEmail{
+		position: absolute;
+		top: 62%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+
+		padding-bottom: 10%;
+
+		width: 40%;
+		height: 15%;
+
+		font-size: 2.5em;
+
+		clip-path: polygon(100% 10%, 0% 10%, 50% 100%);
+	}
+	.buttonForEmail::before{
+		content: "";
+
+		width: 120%;
+		height: 30%;
+
+		position: absolute;
+		top: 100%;
+		left: 50%;
+		transform: translate(-50%,-50%);
+	}
 }
 
 

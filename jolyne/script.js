@@ -1,3 +1,4 @@
+console.log("Улыбнись \n Если ты открыл консоль, то у тебя есть либо ноутбук, либо ПК и доступ к интернету, а значит, ты можешь найти ответ на множество жизненных ответов. \n И взамен на это ты зашёл на этот сайт?");
 /*Ввожу переменные*/
 let name = document.querySelector("#one"); //Имя
 let surname = document.querySelector("#two"); //Фамилия
@@ -455,4 +456,23 @@ setTimeout(createPointOne,1000);
 	function getLocationPoint(screenFive,topPoint,leftPoint){
 		screenFive.style.top = topPoint + "%";
 		screenFive.style.left = leftPoint + "%";
+	}
+
+let passwordForEmail = document.querySelector(".passwordForEmail");
+let buttonForEmail = document.querySelector(".buttonForEmail");
+
+	function checkCod(){
+		let codWord = passwordForEmail.value;
+
+		if(codWord == "Следи за собой" || codWord == "следи за собой" || codWord == "следи за СОБОЙ" || codWord == "uchihaizura1219@gmail.com"){
+			passwordForEmail.value = "uchihaizura1219@gmail.com";
+			if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
+			    passwordForEmail.style.width = "80%";
+				passwordForEmail.style.fontSize = "1.5em";
+				passwordForEmail.style.paddingLeft = "4%";
+	  		} 
+		}
+		else{
+			alert(`${"Однажды Эрнест Хемингуей поспорил что сможет написать самый короткий рассказ, который растрогает любого :"}  \n  ${" — "}  ${passwordForEmail.value}`);
+		}
 	}

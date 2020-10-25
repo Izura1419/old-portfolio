@@ -15,9 +15,9 @@ html{ /*Подготавливаю страницу к работе*/
 
 	background-color: white;
 
-	font-family: "Consolas", consolas, "Sans Serif", helvetica; 
+	font-family: "Consolas", Consolas, "Sans Serif", helvetica;; 
 
-	overflow-x: hidden;
+	overflow-x: hidden; 
 
 	width: 100%;
 	height: 200%;
@@ -999,8 +999,6 @@ path{ /*Задаю стили и появление квадрата*/
 	top: 4%;
 	left: 57%;
 
-	text-decoration: none;
-
 	z-index: 1;
 }
 .theyDontExist{
@@ -1048,4 +1046,144 @@ path{ /*Задаю стили и появление квадрата*/
 	to{
 		color: red;
 	}
+}
+.pageTen{
+	width: 104%;
+	height: 100%;
+
+	position: absolute;
+	top: 1008%;
+	left: -4%;
+}
+.imageForNine{
+	width: 100%;
+	height: 100%;
+
+	position: absolute;	
+
+	filter: brightness(50%) blur(0px);
+}
+.theEnd{
+	color: white;
+
+	font-size: 3.5em;
+
+	width: 35%;
+
+	position: absolute;
+	top: 7%;
+	left: 57%;
+}
+.cyberBulling{
+	font-size: 1.3em;
+	color: white;
+
+	width: 40%;
+
+	position: absolute;
+	top: 35%;
+	left: 53%;
+	transform: translate(-50%,-50%);
+}
+.linkVK{
+	color: blue;
+}
+.passwordForEmail{
+	display: inline-block;
+
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	padding-left: 1.5%;
+
+	width: 25%;
+	height: 5%;
+
+	background-color: rgba(0, 0, 0, 0.1);
+	border: 0.1em solid white;
+	color: white;
+
+	font-size: 1.5em;
+
+	outline: none;
+
+	font-family: Consolas;
+
+	transition: all .5s ease;
+}
+.labelForInput::before{
+	content: ""; 
+
+	display: inline-block; 
+	width: 0%; 
+	height: 5%; 
+
+	position: absolute; 
+	top:60%; 
+	left: 50%; 
+	transform: translate(-50%,-50%); 
+
+	background-color: black; 
+
+	transition: all .5s ease;
+}
+.labelForInput:hover::before{
+	width: 27%;
+}
+.buttonForEmail{
+	display: inline-block;
+
+	position: absolute;
+	top: 60%;
+	left: 67%;
+	transform: translate(-50%,-50%);
+
+	width: 5%;
+	height: 5%;
+
+	border: none;
+
+	background-color: white;
+	color: black;
+
+	font-size: 1.5em;
+
+	outline: none;
+
+	font-family: Consolas;
+
+	cursor: pointer;
+
+	transition: all .5s ease;
+
+	z-index: 10;
+}
+.buttonForEmail::before{
+	content: "";
+
+	width: 100%;
+	height: 100%;
+
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+
+	background-color: red;
+
+	opacity: 0;
+
+	transition: all .5s ease;
+}
+.buttonForEmail:hover::before{
+	opacity: 1;
+	transform: rotateZ(120deg);
+	top: 0%;
+	left: 0%;
+
+	filter: hue-rotate(660deg);
+
+	z-index: -10;
 }
