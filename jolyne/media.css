@@ -621,10 +621,10 @@
 	}
 	.pageTen{
 		width: 120%;
-		height: 120%;
+		height: 800px;
 
 		position: absolute;
-		top: 1967%;
+		top: 1970%;
 		left: 1%;
 	}
 	.imageForNine{
@@ -633,7 +633,7 @@
 		left: -75%;
 
 		width: 230%;
-		height: 80%;
+		height: 530px;
 
 		transform: rotateZ(90deg);
 	}
@@ -643,20 +643,20 @@
 		width: 60%;
 
 		position: absolute;
-		top: 7%;
+		top: 14%;
 		left: 51%;
 	}
 	.cyberBulling{
 		width: 80%;
 
 		position: absolute;
-		top: 30%;
+		top: 37%;
 		left: 52%;
 		transform: translate(-50%,-50%);
 	}
 	.passwordForEmail{
 		position: absolute;
-		top: 50%;
+		top: 60%;
 		left: 50%;
 		transform: translate(-50%,-50%);
 
@@ -671,7 +671,7 @@
 		content: ""; 
 
 		position: absolute; 
-		top:50%; 
+		top:60%; 
 		left: 50%; 
 		transform: translate(-50%,-50%); 
 	}
@@ -680,7 +680,7 @@
 	}
 	.buttonForEmail{
 		position: absolute;
-		top: 62%;
+		top: 75%;
 		left: 50%;
 		transform: translate(-50%,-50%);
 
