@@ -456,6 +456,10 @@ setTimeout(createPointOne,1000);
 	function getLocationPoint(screenFive,topPoint,leftPoint){
 		screenFive.style.top = topPoint + "%";
 		screenFive.style.left = leftPoint + "%";
+
+		if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
+			    screenFive.style.left = get(20,0) + "%";
+	  		}
 	}
 
 let passwordForEmail = document.querySelector(".passwordForEmail");
