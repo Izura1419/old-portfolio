@@ -1,4 +1,4 @@
-console.log("Улыбнись \n Если ты открыл консоль, то у тебя есть либо ноутбук, либо ПК и доступ к интернету, а значит, ты можешь найти ответ на множество жизненных ответов. \n И взамен на это ты зашёл на этот сайт?");
+console.log("Улыбнись \n Если ты открыл консоль, то у тебя есть либо ноутбук, либо ПК и доступ к интернету, а значит, ты можешь найти ответ на множество различных вопросов. \n И взамен на это ты зашёл на этот сайт?");
 /*Ввожу переменные*/
 let name = document.querySelector("#one"); //Имя
 let surname = document.querySelector("#two"); //Фамилия
@@ -17,7 +17,7 @@ function reverse(){
 /*Ввожу функцию, которая проверяет ширину экрана устройства*/
 	function check() {
 	  if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
-	    posit = "60%"; /*Позиция кнопки будет 80vw*/
+	    posit = "80%"; /*Позиция кнопки будет 80vw*/
 	    open.style.width = "50%"; /*Её ширина 50wv*/
 	  } 
 	  else{
@@ -480,3 +480,45 @@ let buttonForEmail = document.querySelector(".buttonForEmail");
 			alert(`${"Однажды Эрнест Хемингуей поспорил что сможет написать самый короткий рассказ, который растрогает любого :"}  \n  ${" — "}  ${passwordForEmail.value}`);
 		}
 	}
+
+let navigationBefore = document.querySelector(".navigationBefore");
+
+	function navigationBeforeOpen(){
+		navigationBefore.style.display = "inline-block";
+		navigationBefore.style.backgroundColor = "rgb(38,120,255)";
+	}
+	function navigationBeforeClose(){
+		navigationBefore.style.display = "none";
+		navigationBefore.style.backgroundColor = "rgba(38,120,255,0)";
+	}
+
+setTimeout(navigationBeforeOpen, 5000); 
+setTimeout(navigationBeforeClose, 10000); 
+
+let navigation = document.querySelector(".navigation");
+
+let teleportLink = document.querySelectorAll(".teleportLink");
+let teleport = document.querySelector(".teleport");
+let spin = document.querySelector(".spin");
+
+	 for (let elem of teleportLink) {
+    	elem.onclick = function(){
+    		navigation.style.zIndex = 0;
+
+    		teleport.style.opacity = "1";
+			teleport.style.zIndex = "5";
+
+			spin.style.transform = "translate(-50%,-50%) rotateZ(500deg)"
+
+			setTimeout(stopLoading, 1000);
+    	}
+  }
+
+  		function stopLoading(){
+  			navigation.style.zIndex = 10;
+
+  			teleport.style.opacity = "0";
+			teleport.style.zIndex = "-5";
+
+			spin.style.transform = "translate(-50%,-50%) rotateZ(-500deg)"
+  		}

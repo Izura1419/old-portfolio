@@ -9,7 +9,29 @@
 	<link rel="shortcut icon" href="img/icon/reimi.jpg" type="image/jpg">
 </head>
 <body>
-	<div class="page pageZero"><!--Контейнер для первой страницы-->
+		<div class="navigation">
+		<img src="img/door.png" alt="#" class="portal">
+		<span class="navigationBefore">Куда телепортируемся?</span>
+		<dl class="list">
+			<dt><span class="teleportLink"><a href="#pageZero" class="dtLink">Кто я?</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageOne" class="dtLink">Как я вообще попал в IT?</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageTwo" class="dtLink">C++</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageThree" class="dtLink">Как я вернулся?</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageFour" class="dtLink">Мои проекты</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageFive" class="dtLink">Первый сайт</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageSix" class="dtLink">Второй</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageSeven" class="dtLink">Третий</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageEight" class="dtLink">Четвёртый</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageNine" class="dtLink">Незаконченные проекты</a></span></dt>
+			<dt><span class="teleportLink"><a href="#pageTen" class="dtLink">Как со мной связяться?</a></span></dt>
+		</dl>
+	</div>
+
+	<div class="teleport">
+		<img src="img/spin.png" alt="*spin*" class="spin">
+	</div>
+	
+	<div class="page pageZero" id="pageZero"><!--Контейнер для первой страницы-->
 
 	<!--Мои фамилия и имя, которые летает по сайту-->
 	<div class="fnln">
@@ -38,7 +60,7 @@
 	</div>
 
 <!--вторая страница-->
-	<div class="page pageOne">
+	<div class="page pageOne" id="pageOne">
 		<!--звёзды на фоне-->
 		<img class="stars" src="img/stars.png" alt="stars">
 		<!--заголовок-->
@@ -59,7 +81,7 @@
 	</div>
 
 
-	<div class="page pageTwo">
+	<div class="page pageTwo" id="pageTwo">
 		<h1 class="mFDL">C <span class="plus">+</span> <span class="plus">+</span></h1>
 		<span class="blin">Я не знаю С--</span>
 		<h2 class="sclboy">Уже не помню как, но мой взгляд пал именно на С++. Не помню даже то, искал ли я что то
@@ -70,7 +92,7 @@
 		<div class="cPlus"></div>
 	</div>
 
-	<div class="page pageThree">
+	<div class="page pageThree" id="pageThree">
 		<div class="wrapper">
 		<h1 class="comeBack">Как я вернулся?</h1> 
 		<h2 class="summer">Лето... прекрасная пора, огромное колличество свободного времени.
@@ -85,7 +107,7 @@
 		<h1 class="ySlf">С О Б О Й</h1>
 	</div>
 
-	<div class="page pageFour">
+	<div class="page pageFour" id="pageFour">
 		<h1 class="myProjects"><span class="allWrd wrd">М</span><span class="allWrd wrd1">о</span><span class="allWrd wrd2">и</span> 
 			<span class="allWrd wrd3">п</span><span class="allWrd wrd4">р</span><span class="allWrd wrd5">о</span><span class="allWrd wrd6">е</span><span class="allWrd wrd7">к</span><span class="allWrd wrd8">т</span><span class="allWrd wrd9">ы</span></h1>
 
@@ -96,7 +118,7 @@
 		<img src="img/jol.gif" alt="джолин(стоит)" class="jolGif">
 	</div>
 
-	<div class="page pageFive">
+	<div class="page pageFive" id="pageFive">
 		
 		<h2 class="startsAnimeGor">start start start start start start start
 			start start start start start start start start start start 
@@ -118,7 +140,7 @@
 		<img src="img/screenshots/screen13.png" alt="скрин три" class="site1Screen3">
 	</div>
 
-	<div class="page pageSix">
+	<div class="page pageSix" id="pageSix">
 		<a href="https://izura1419.github.io/reg/" target="_blank" class="second">Второй</a>
 		<h2 class="registration">Следующий сайт состоит из трёх страниц. Это обычный регистрационный сайт, 
 		пароль и логин которого сохраняются не в базе данных, а в самом компьютере пользователя. Ничего необычного.
@@ -131,7 +153,7 @@
 		</div>
 	</div>
 
-	<div class="page pageSeven">
+	<div class="page pageSeven" id="pageSeven">
 		<a href="https://izura1419.github.io/die.github.io/date/" target="_blank" class="third">Третий</a>
 		<h2 class="die">В жизни каждому человеку иногда хочется сделать что-то необычное, к напримеру 
 			<span class="epic">прыгнуть с парашютом</span>. И в день создания этого сайтая решил разнообразить
@@ -145,14 +167,14 @@
 		<img src="img/screenshots/screen33.png" alt="скрин три" class="site3Screen3">
 	</div>
 
-	<div class="page pageEight">
+	<div class="page pageEight" id="pageEight">
 		<a href="https://izura1419.github.io/color/" target="_blank" class="fourth">Четвёртый</a>
 		<h2 class="paints">ого, цвета меняются</h2> <h2 class="prikol">прикольно</h2>
 
 		<button class="earnEpilepsy" onclick="changeColorBG()">Заработать эпилепсию</button>
 	</div>
 
-	<div class="page pageNine">
+	<div class="page pageNine" id="pageNine">
 		<h1 class="andOther">И другие<span class="pointOne">.</span><span class="pointThree">.</span><span class="pointTwo">.</span></h1>
 		<h2 class="theyDontExist">Вы не найдёте их в сети, так как это проекты, заброшенные по причине недостатка
 		знаний в области JaVaScRiPt</h2> 
@@ -163,7 +185,7 @@
 		 onclick="getLocationPoint(site5Screen2,get(100,0),get(100,0))">
 	</div>
 
-	<div class="page pageTen">
+	<div class="page pageTen" id="pageTen">
 		<img src="img/pageten.jpg" alt="parth 6 the end" class="imageForNine">
 
 		<h1 class="theEnd">Вот и всё</h1>

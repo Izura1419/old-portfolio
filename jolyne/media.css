@@ -102,9 +102,11 @@
 	.span{ /*Увеличиваю и позиционирую кнопку*/
 		font-size: 1.5em;
 
+		width: 30%;
+
 		position: absolute;
 		top: 100%;
-		left: 70%;
+		left: 75%;
 		transform: translate(-50%,-50%);
 	}
 	.span::before{ /*Убираю анимацию при наведении*/
@@ -703,6 +705,53 @@
 		top: 100%;
 		left: 50%;
 		transform: translate(-50%,-50%);
+	}
+	.navigation{
+		width: 26%;
+		height: 11.7%;
+
+		position: fixed;
+		top: 83%;
+		left: 70%;
+	}
+	.navigationBefore{
+		width: 250%;
+		height: 30%;
+		padding-left: 25%;
+		padding-top: 5%;
+		
+		font-size: 1.5em;
+
+		position: absolute;
+		top: 30%;
+		left: -250%;
+	}
+	.portal{
+		padding-top: 25%;
+	}
+	.list{
+		font-size: 1.5em;
+
+		width: 320%;
+		height: 380%;
+
+		position: relative;
+		top: -525%;
+		left: 370%;
+	}
+	dt{
+		padding-top: 3%;
+		padding-left: 5%;
+	}
+	.navigation:hover .list{
+		position: relative;
+		top: -525%;
+		left: -240%;
+
+		z-index: 10;
+	}
+	.spin{
+		width: 50%;
 	}
 }
 
