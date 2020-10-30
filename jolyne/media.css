@@ -707,12 +707,12 @@
 		transform: translate(-50%,-50%);
 	}
 	.navigation{
-		width: 117px;
-		height: 117px;
+		width: 90px;
+		height: 90px;
 
 		position: fixed;
-		top: 83%;
-		left: 70%;
+		top: 85%;
+		left: 75%;
 	}
 	.navigationBefore{
 		width: 300px;
@@ -724,7 +724,7 @@
 
 		position: absolute;
 		top: 30%;
-		left: -250%;
+		left: -340%;
 	}
 	.portal{
 		padding-top: 25%;
@@ -736,8 +736,8 @@
 		height: 450px;
 
 		position: relative;
-		top: -525%;
-		left: 370%;
+		top: -725%;
+		left: 335%;
 	}
 	dt{
 		padding-top: 3%;
@@ -745,8 +745,8 @@
 	}
 	.navigation:hover .list{
 		position: relative;
-		top: -525%;
-		left: -240%;
+		top: -725%;
+		left: -335%;
 
 		z-index: 10;
 	}
