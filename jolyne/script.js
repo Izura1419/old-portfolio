@@ -2,7 +2,7 @@ console.log("Улыбнись \n Если ты открыл консоль, то
 /*Ввожу переменные*/
 let name = document.querySelector("#one"); //Имя
 let surname = document.querySelector("#two"); //Фамилия
-let open = document.querySelector("span"); //Кнопка "Открыть" 
+let open = document.querySelector(".span"); //Кнопка "Открыть" 
 /*Ввожу функцию, которая создаёт анимацию полёта имени и фамилии*/
 function startFly() {
 	name.style.animation = "fly 8s linear 0s infinite";
