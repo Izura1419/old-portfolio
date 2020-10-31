@@ -15,6 +15,7 @@ function reverse(){
 	name.style.transform = "translate(-50%,-50%) rotateX(180deg)";
 	surname.style.transform = "translate(-50%,-50%) rotateX(180deg)";
 /*Ввожу функцию, которая проверяет ширину экрана устройства*/
+	let posit;
 	function check() {
 	  if (window.matchMedia("(max-width: 1024px)").matches) { //Если окно устройства равно тому-то, делает это
 	    posit = "80%"; /*Позиция кнопки будет 80vw*/
