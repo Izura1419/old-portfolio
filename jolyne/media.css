@@ -739,7 +739,7 @@
 		height: 450px;
 
 		position: relative;
-		top: -725%;
+		top: -665%;
 		left: 335%;
 	}
 	dt{
@@ -748,7 +748,7 @@
 	}
 	.navigation:hover .list{
 		position: relative;
-		top: -725%;
+		top: -665%;
 		left: -335%;
 
 		z-index: 10;
