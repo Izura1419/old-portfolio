@@ -506,7 +506,7 @@ let spin = document.querySelector(".spin");
     	elem.onclick = function(){
     		navigation.style.zIndex = 0;
 
-    		teleport.style.display = "inline-block";
+    		teleport.style.opacity = 1;
 			teleport.style.zIndex = "5";
 
 			spin.style.transform = "translate(-50%,-50%) rotateZ(500deg)"
@@ -518,7 +518,7 @@ let spin = document.querySelector(".spin");
   		function stopLoading(){
   			navigation.style.zIndex = 10;
 
-  			teleport.style.display = "none";
+  			teleport.style.opacity = 0;
 			teleport.style.zIndex = "-5";
 
 			spin.style.transform = "translate(-50%,-50%) rotateZ(-500deg)"

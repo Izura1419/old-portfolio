@@ -1276,7 +1276,7 @@ dt{
 	background-color: rgba(38,120,255);
 }
 .teleport{
-	display: none;
+	opacity: 0;
 
 	width: 100%;
 	height: 100%;
