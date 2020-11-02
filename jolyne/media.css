@@ -1,6 +1,6 @@
-/*ОПТИМИЗАЦИЯ ПЕРВОЙ СТРАНИЦЫ ПОД МОБИЛЬНЫЕ УСТРОЙСТВА*/
+/*ОПТИМИЗАЦИЯ САЙТА ПОД МОБИЛЬНЫЕ УСТРОЙСТВА*/
 
-/*общие настройки (чтобы не повторяться)*/
+
 @media (max-width: 1150px) {
 	.img{
 		width: 100%;
@@ -17,7 +17,7 @@
 		left: -10%;
 	}
 
-	h1{ /*Делаю текст более жирным и также позиционирую его*/
+	h1{ 
 		font-weight: 500;
 		font-size: 2em;
 
@@ -26,10 +26,10 @@
 		left: 20%;
 		transform: translate(-50%,-50%);
 	}
-	#two{ /*Делаю фамилию ниже имени*/
+	#two{ 
 		top: 110%;
 	}
-	@keyframes fly{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
+	@keyframes fly{ 
 	from{
 		top:90%;
 		left:50%;
@@ -67,7 +67,7 @@
 		left: 50%;
 	}
 }
-@keyframes fly2{ /*Переделываю анимацию полёта имени, чтобы текст не улетал за рамки*/
+@keyframes fly2{ 
 	from{
 		top:100%;
 		left:60%;
@@ -106,7 +106,7 @@
 	}
 }
 	
-	.span{ /*Увеличиваю и позиционирую кнопку*/
+	.span{ 
 		font-size: 1.5em;
 
 		width: 30%;
@@ -116,10 +116,9 @@
 		left: 75%;
 		transform: translate(-50%,-50%);
 	}
-	.span::before{ /*Убираю анимацию при наведении*/
+	.span::before{ 
 		display: none;
 	}
-	/*Делаю так, чтобы маленький квадрат и ненужные большие были незаметены для мобильных устройств*/
 	#polyone{ 
 		display: none;
 	}
@@ -129,7 +128,7 @@
 	#polyfour{
 		display: none;
 	}
-	#polytwo{ /*Делаю так, чтобы большой квадрат был виден для мобильных устройств и немного стилизую его*/
+	#polytwo{ 
 		display: inline-block;
 
 		stroke-width: 5;
@@ -138,26 +137,26 @@
 
 		transition: all 8s ease;
 	}
-	svg{ /*Позиционирую svg и задаю ширину*/
+	svg{
 		top: 55%;
 		left: 105%;
 
 		width: 90%;
 	}
 
-/*Отдельные настройки для разных устройств с разной шириной*/
+
 
 @media (max-width: 550px){
-	svg{/*позиционирую svg*/
+	svg{
 		top: 36%;
 		left: 70%;
 
 		height: 80%;
 	}
-	.img{/*позиционирую и задаю размер фотографии*/
+	.img{
 		left: 9%;
 	}
-	.pageOne{/*Растягивание второй страницы, цвет*/
+	.pageOne{
 		width: 120%;
 		height: 280%;
 
@@ -165,7 +164,7 @@
 
 		top: 120%;
 	}
-	.story{/*цвет, размер и позиция заголовка*/
+	.story{
 		font-size: 2.5em;
 
 		width: 80%;
@@ -174,7 +173,7 @@
 		top: 3%;
 		left: 55%;
 	}
-	.ficha::before{/*красный круг, появляющийся при  наведении на IT*/
+	.ficha::before{
 		content: "";
 
 		display: inline-block;
@@ -194,11 +193,11 @@
 
 		transition: all 1s ease;
 	}
-	.stars{/*размер звёзд и позиция*/
+	.stars{
 		width: 90%;
 		height: 100%;
 	}
-	@keyframes flyStars{/*анимация движения звёзд*/
+	@keyframes flyStars{
 		from{
 			left: -10%;
 		}
@@ -209,30 +208,30 @@
 			left: -10%;
 		}
 }
-	.grow{/*ширина контента  и его расположение*/
+	.grow{
 		width: 80%;
 
 		position: absolute;
 		top: 10%;
 		left: 13%;
 	}
-	.rost{/*иллюстрация*/
+	.rost{
 		width: 80%;
 		height: 21%;
 
 		top: 20%;
 		left: 5%;
 	}
-	.whoIm:nth-child(2){/*вторая часть контейнера должна быть ниже первой*/
+	.whoIm:nth-child(2){
 		position: absolute;
 		top: 700%;
 		left: 0%;
 	}
-	.pc{/*иллюстрация*/
+	.pc{
 		width: 80%;
 		height: 20%;
 
-		top: 75%; /*баю бай, засыпай, бейби попадают в рай, не кури, не киряй, не кури, не киряй...*/
+		top: 75%; 
 		left: 10%;
  	}
 
@@ -477,6 +476,12 @@
 		position: absolute;
 		top: 1533%;
 		left: 1%;
+	}
+	.seeScreen{
+		top: 85%;
+		left: 15%;
+
+		font-size: 1.5em;
 	}
 	.third{
 		font-size: 3em;
@@ -762,28 +767,25 @@
 
 
 @media (max-width: 500px){
-	svg{/*позиционирую svg*/
+	svg{
 		left: 70%;
 	}
-	.img{/*задаю размер (от контейнера!) фотографии*/
+	.img{
 	}
-	.span{/*опускаю кнопку ниже*/
+	.span{
 		top: 135%;
 	}
 }
 
 @media (max-width: 480px){
-	svg{/*позиционирую svg*/
-		
+	svg{
 		left: 70%;
 	}
-	.img{/*задаю размер (от контейнера!) фотографии*/
-	}
-	.span{/*опускаю кнопку ниже*/
+	.span{
 		top: 135%;
 	}
 }
-/*Рпзмер текста для устройств с шириной от 450 до 1100 пикселей*/
+
 @media (min-width: 450px) and (max-width: 1100px){
 	.fnln{
 		font-size: 1.5em;
@@ -794,29 +796,26 @@
 }
 
 @media (max-width: 449px){
-	svg{/*позиционирую svg*/
-		
+	svg{
 		left: 65%;
 	}
-	.img{/*задаю размер (от контейнера!) фотографии*/
-	}
-	.fnln{/*задаю размер текста имени и фамилии*/
+	.fnln{
 		font-size: 1.5em;
 	}
-	.span{/*задаю размер текста кнопке*/
+	.span{
 		font-size: 1em;
 		top: 135%;
 	}
 }
 
 @media (max-width: 400px){
-	svg{/*позиционирую svg*/
+	svg{
 		left: 65%;
 	}
-	.fnln{/*задаю размер текста имени и фамилии*/
+	.fnln{
 		font-size: 1.4em;
 	}
-	.span{/*задаю размер текста кнопке*/
+	.span{
 		font-size: 1em;
 	}
 }
@@ -825,19 +824,19 @@
 	.pageZero{
 		height: 120%;
 	}
-	.svg{ /*Позиционирую svg*/
+	.svg{
 		top: 46%;
 		left: 65%;
 
 		width: 97%;
 	}
-	.fnln{/*задаю размер текста имени и фамилии*/
+	.fnln{
 		font-size: 1.3em;
 	}
-	.span{/*задаю размер текста кнопке*/
+	.span{
 		font-size: 1.1em;
 	}
-	#polyone{ /*Делаю так, чтобы нужные квадраты НЕ показывались НЕнужному устройству*/
+	#polyone{ 
 		display: none;
 	}
 	#polythree{
@@ -852,19 +851,19 @@
 
 		transition: all 8s ease;
 	}
-	#polytwo{ /*Делаю так, чтобы нужный квадрат показывался нужному устройству и немного стилизую его*/
+	#polytwo{ 
 		display: none;
 	}
 }
 
 @media (max-width: 320px){
-	svg{/*позиционирую svg*/
+	svg{
 		top: 52%;
 		left: 88%;
 
 		width: 97%;
 	}
-	#polyone{ /*Делаю так, чтобы нужные квадраты НЕ показывались НЕнужному устройству*/
+	#polyone{
 		display: none;
 	}
 	#polythree{
@@ -873,7 +872,7 @@
 	#polytwo{
 		display: none;
 	}
-	#polyfour{/*Делаю так, чтобы нужный квадрат показывался нужному устройству и немного стилизую его*/
+	#polyfour{
 		display: inline-block;
 
 		stroke-width: 5;

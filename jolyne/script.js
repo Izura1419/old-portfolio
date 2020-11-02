@@ -46,7 +46,7 @@ function reverReverse(){
 	open.style.opacity = "0";
 }
 
-
+//создаю функцию, которая при клике на блок добавляет к нему часть пасхалки - слово "за"
 let sclboy = document.querySelector(".sclboy");
 
 	sclboy.onclick = function(){
@@ -59,12 +59,12 @@ let sclboy = document.querySelector(".sclboy");
 		}
 		add();
 	}
-
+//функция, генерирующая случаные числа в диапазоне (большее, меньшее)
 function get(max,min){
 	let f = Math.floor(Math.random() * (max - min + 1)) + min;
 	return f;
 }
-
+//функция, которая перемешивает три слова в тексте по клику
 	let oneDL = document.querySelector(".oneDL");
 	let twoDL = document.querySelector(".twoDL");
 	let threeDL = document.querySelector(".threeDL");
@@ -99,7 +99,7 @@ function get(max,min){
 
 	let wrapper = document.querySelector(".wrapper");
 	let ySlf = document.querySelector(".ySlf");
-
+//функция, которая вызывает появление надписи "СОБОЙ" спустя 20 секунд после обновления сайта и закрывает её
 function screamer(){
 	wrapper.style.display = "none";
 	ySlf.style.display = "inline-block";
@@ -109,8 +109,8 @@ function silence(){
 	ySlf.style.display = "none";
 }
 	setInterval(screamer, 20000);
-	setInterval(silence, 10100);
-
+	setInterval(silence, 20100);
+//буквы, который по рандому переворачиваются или не переворачиваются
 let turnEverAroun = document.querySelector(".turnEverAroun");
 let projects = document.querySelector(".myProjects");
 
@@ -125,7 +125,7 @@ let wrd7 = document.querySelector(".wrd7");
 let wrd8 = document.querySelector(".wrd8");
 let wrd9 = document.querySelector(".wrd9");
 
-	function flipOver(letter){
+	function flipOver(letter){//если все буквы перевёрнуты, то надпись пропадает
 	let getNum = get(5,1);
 		if(getNum == 1){
 			letter.style.transform = "rotateX(180deg)";
@@ -258,7 +258,7 @@ let wrd9 = document.querySelector(".wrd9");
 		flipOver(wrd8);
 		flipOver(wrd9);
 	}
-
+//небольшая пасхалка, которая показывает какое сейчас время суток, исходя из часов
 	let dataAndTime = document.querySelector(".dataAndTime");
 
 	let today = new Date();
@@ -272,7 +272,7 @@ let wrd9 = document.querySelector(".wrd9");
 	"Вечер" ;
 
 	dataAndTime.innerHTML = timeOfDay + ". " + hours + ":" + minutes;
-
+//каждая из трёх картинок увеличивается, появляется в одном месте и возвращается на другое место
 let site1Screen1 = document.querySelector(".site1Screen1");
 let site1Screen2 = document.querySelector(".site1Screen2");
 let site1Screen3 = document.querySelector(".site1Screen3");
@@ -332,13 +332,13 @@ function clickForAllScreens(screen){
 		clickForAllScreens(this);
 	}
 let epic = document.querySelector(".epic");
-
+//массив, который при клике выбирает любое число и вставляет его в текст
 	epic.onclick = function(){
 		let whatYouCanDo = ["сдохнуть", "отправиться путешествовать автостопом", "устроить соревнования по сну", "наесться до отвала", "пробежать марафон", "сделать сто отжиманий", "взять велосипед и ехать куда глаза глядят", "смастерить плот и проплыть по реке", "прожить неделю без соцсетей", "посмотреть короткометражное аниме и расплакаться", "послушать все альбомы Короля и Шута"];
 		let numberOfElement = get(10,0);
 		this.innerHTML = whatYouCanDo[numberOfElement];
 	}
-
+//функция, которая меняет картинки
 let site3Screen1 = document.querySelector(".site3Screen1");
 let site3Screen2 = document.querySelector(".site3Screen2");
 let site3Screen3 = document.querySelector(".site3Screen3");
@@ -374,7 +374,7 @@ let site3Screen3 = document.querySelector(".site3Screen3");
 		site3Screen3.style.zIndex = 0;
 	}
 
-
+//функция, которая меняет цвет фона на рандомный
 let pageEight = document.querySelector(".pageEight");
 
 let earnEpilepsy = document.querySelector(".earnEpilepsy");
@@ -426,6 +426,8 @@ let earnEpilepsy = document.querySelector(".earnEpilepsy");
 
 		set();
 	}
+
+//функция, которая постепенно делает видимыми точки, а после, также постепенно, меняет их цвета 
 	let pointOne = document.querySelector(".pointOne");
 	let pointTwo = document.querySelector(".pointTwo");
 	let pointThree = document.querySelector(".pointThree")
@@ -450,7 +452,7 @@ setTimeout(createPointOne,1000);
 			}
 		}
 	}
-
+//функция, которая по клику перемещает картинку на рандомную позицию
 	let site5Screen1 = document.querySelector(".site5Screen1");
 	let site5Screen2 = document.querySelector(".site5Screen2");
 
@@ -462,7 +464,7 @@ setTimeout(createPointOne,1000);
 			    screenFive.style.left = get(20,0) + "%";
 	  		}
 	}
-
+//функция, которая проверяет правильность кодового слова и если оно неверно, то выдаёт анекдот
 let passwordForEmail = document.querySelector(".passwordForEmail");
 let buttonForEmail = document.querySelector(".buttonForEmail");
 
@@ -481,7 +483,7 @@ let buttonForEmail = document.querySelector(".buttonForEmail");
 			alert(`${"Однажды Эрнест Хемингуей поспорил что сможет написать самый короткий рассказ, который растрогает любого :"}  \n  ${" — "}  ${passwordForEmail.value}`);
 		}
 	}
-
+//функция, которая телепортирует пользователя по ссылке-якорю. Ссылки якоря находятся в массиве, который перебирает цикл
 let navigationBefore = document.querySelector(".navigationBefore");
 
 	function navigationBeforeOpen(){

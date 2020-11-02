@@ -1,16 +1,15 @@
-@font-face{/*Загружаю шрифт*/
+@font-face{
 	font-family: "Consolas";
 
 	src: url("fonts/consola.ttf");
 }
-@font-face{/*Загружаю шрифт*/
+@font-face{
 	font-family: "Sans Serif";
 
 	src: url("fonts/helvetica.otf");
 }
 
-html{ /*Подготавливаю страницу к работе*/
-	margin: 0;	
+html{ 	margin: 0;	
 	padding: 0;
 
 	background-color: white;
@@ -23,12 +22,12 @@ html{ /*Подготавливаю страницу к работе*/
 	height: 200%;
 }
 
-.page{ /*делаю контейнеры размером со всё устройство*/
+.page{ 
 	width: 100%;
 	height: 100%;
 }
 
-h1{ /*Задаю стили моему имени и фамилии, чтобы они выглядени по-человечески*/
+h1{ 
 	font-size: 5em;
 	font-weight: lighter;
 
@@ -39,10 +38,10 @@ h1{ /*Задаю стили моему имени и фамилии, чтобы 
 
 	transition: all 1s ease;
 }
-#two(2){ /*Делаю так, чтобы фамилия была ниже имени*/
+#two(2){ 
 	top: 85%;
 }
-@keyframes fly{ /*Анимация плавного полёта имени*/
+@keyframes fly{ 
 	from{
 		top:15%;
 		left:30%;
@@ -80,7 +79,7 @@ h1{ /*Задаю стили моему имени и фамилии, чтобы 
 		left: 30%;
 	}
 }
-@keyframes fly2{ /*Анимация плавного полёта фамилии*/
+@keyframes fly2{ 
 	from{
 		top:45%;
 		left:40%;
@@ -119,7 +118,7 @@ h1{ /*Задаю стили моему имени и фамилии, чтобы 
 	}
 }
 
-.span{ /*Задаю позицию, размер и появление своеобразной кнопке */
+.span{ 
 	position: absolute;
 	top: 105%;
 	left: 35%;
@@ -132,7 +131,7 @@ h1{ /*Задаю стили моему имени и фамилии, чтобы 
 
 	transition: all 1s ease;
 }
-.span::before{ /*Создаю новый элемент (палочку) над кнопкой*/
+.span::before{ 
 	content: "";
 
 	position: absolute;
@@ -148,16 +147,16 @@ h1{ /*Задаю стили моему имени и фамилии, чтобы 
 
 	transition: all 1s ease;
 }
-.span:hover::before{/*Перемещаю палочку при наведении*/
+.span:hover::before{
 	top: 100%;
 }
-.fnln{ /*Задаю размер контейнеру текста*/
+.fnln{ 
 	width: 70%;
 	height: 70%;
 	position: absolute;
 	animation: openone 1s ease;
 }
-@keyframes openone{ /*анимация появления контейнера с текстом*/
+@keyframes openone{ 
 	from{
 		left: -60%;
 	}
@@ -169,7 +168,7 @@ h1{ /*Задаю стили моему имени и фамилии, чтобы 
 	}
 }
 
-svg{ /*Задаю размеры контейнеру с svg*/
+svg{ 
 	position: absolute;
 	top: 50%;
 	left: 73%;
@@ -178,7 +177,7 @@ svg{ /*Задаю размеры контейнеру с svg*/
 	width: 40%;
 	height: 100%;
 }
-path{ /*Задаю стили и появление квадрата*/
+path{ 
 	position: relative;
 
 	fill: none;
@@ -191,10 +190,10 @@ path{ /*Задаю стили и появление квадрата*/
 
 	transition: all 5s ease;
 }
-#polyone{ /*Делаю так, чтобы нужный квадрат показывался нужному устройству и немного стилизую его*/
+#polyone{ 
 	display: inline-block;
 }
-#polytwo{ /*Делаю так, чтобы нужные квадраты НЕ показывались НЕнужному устройству*/
+#polytwo{ 
 	display: none;
 }
 #polythree{
@@ -204,7 +203,7 @@ path{ /*Задаю стили и появление квадрата*/
 	display: none;
 }
 
-.img{ /*Задаю позицию, ширину, анимацию и покрывание родительского элемента фото Джолин*/
+.img{ 
 	object-fit: contain;
 	position: relative;
 
@@ -216,7 +215,7 @@ path{ /*Задаю стили и появление квадрата*/
 	animation: open 3s ease;
 }
 
-.image{ /*Задаю позицию и ширину родительскому элементу фото Джолин*/
+.image{ 
 	position: absolute;
 	width: 40%;
 	height: 75%;
@@ -224,7 +223,7 @@ path{ /*Задаю стили и появление квадрата*/
 	top: 8%;
 	left: 50%;
 }
-@keyframes open{ /*Анимация появления фото Джолин*/
+@keyframes open{ 
 	from{
 		opacity: 0;
 	}
@@ -234,7 +233,7 @@ path{ /*Задаю стили и появление квадрата*/
 }
 
 
-.pageOne{ /*Растягивание второй страницы, цвет*/
+.pageOne{ 
 	width: 98%;
 	height: 100%;
 
@@ -246,7 +245,7 @@ path{ /*Задаю стили и появление квадрата*/
 
 	background-color: black;
 }
-.story{ /*цвет, размер и позиция заголовка*/
+.story{ 
 	color: white;
 
 	font-size: 3em;
@@ -257,12 +256,12 @@ path{ /*Задаю стили и появление квадрата*/
 	top: 5%;
 	left: 50%;
 }
-.ficha{/*отступ фичи*/
+.ficha{
 	margin-left: 1%;
 
 	color: blue;
 }
-.ficha::before{/*красный круг, появляющийся при  наведении на IT*/
+.ficha::before{
 	content: "";
 
 	display: inline-block;
@@ -282,10 +281,10 @@ path{ /*Задаю стили и появление квадрата*/
 
 	transition: all 1s ease;
 }
-.ficha:hover::before{/*при наведении круг увеличивается в размерах*/
+.ficha:hover::before{
 	transform: scale(1);
 }
-.stars{ /*размер звёзд и позиция*/
+.stars{ 
 	position: relative;
 
 	width: 175%;
@@ -293,7 +292,7 @@ path{ /*Задаю стили и появление квадрата*/
 
 	animation: flyStars 30s linear 0s infinite normal none running;
 }
-@keyframes flyStars{/*анимация движения звёзд*/
+@keyframes flyStars{
 	from{
 		top: -10%;
 		left: -80%;
@@ -306,7 +305,7 @@ path{ /*Задаю стили и появление квадрата*/
 		left: -80%;
 	}
 }
-.grow{/*ширина контента  и его расположение*/
+.grow{
 	width: 40%;
 
 	color: white;
@@ -315,24 +314,24 @@ path{ /*Задаю стили и появление квадрата*/
 	top: -80%;
 	left: 5%;
 }
-.eE{ /*пасхалка*/
+.eE{
 	transition:all 10s ease;
 }
-.grow:hover .eE{ /*появление пасхалки*/
+.grow:hover .eE{
 	color: red;
 }
-.rost, .pc{ /*позиции иллюстраций*/
+.rost, .pc{ 
 	position: absolute;
 
 	transition: all 30s ease;
 }
-.rost:hover{ /*кружение иллюстраций при наведении*/
+.rost:hover{ 
 	transform: rotateY(-180deg) rotateX(-180deg) scale(0);
 }
-.pc:hover{/*кружение иллюстраций при наведении*/
+.pc:hover{
 	transform: rotateY(180deg) rotateX(180deg) scale(0);
 }
-/*иллюстрации*/
+
 .rost{ 
 	width: 25%;
 	height: 50%;
@@ -348,7 +347,7 @@ path{ /*Задаю стили и появление квадрата*/
 	left: 45%;
 }
 
-.pageTwo{ /*Растягивание третьей страницы, цвет*/
+.pageTwo{ 
 	width: 100%;
 	height: 100%;
 
@@ -802,6 +801,13 @@ path{ /*Задаю стили и появление квадрата*/
 	left: -4%;
 
 	background-color: black;
+}
+.seeScreen{
+	color: white;
+
+	position: absolute;
+	top: 70%;
+	left: 15%;
 }
 .third{
 	color: blue;
