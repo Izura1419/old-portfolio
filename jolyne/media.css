@@ -297,6 +297,9 @@
 		top: 50%;
 		left: 6%;
 	}
+	.devLan{
+		color: rgb(50,100,250);
+	}
 	.josGif{
 		position: absolute;
 		top: 25%;
@@ -478,8 +481,10 @@
 		left: 1%;
 	}
 	.seeScreen{
-		top: 85%;
-		left: 15%;
+		width: 80%;
+
+		top: 92%;
+		left: 10%;
 
 		font-size: 1.5em;
 	}
@@ -498,6 +503,9 @@
 		position: absolute;
 		top: 10%;
 		left: 5%;
+	}
+	.epic{
+		color: rgb(50,100,250);
 	}
 	.site3Screen1,.site3Screen2,.site3Screen3{
 		position: absolute;
@@ -665,6 +673,9 @@
 		top: 37%;
 		left: 52%;
 		transform: translate(-50%,-50%);
+	}
+	.linkVK{
+		color: rgb(50,100,250);
 	}
 	.passwordForEmail{
 		position: absolute;
